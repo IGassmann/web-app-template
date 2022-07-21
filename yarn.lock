@@ -298,14 +298,14 @@
     "@commitlint/types" "^17.0.0"
     ajv "^8.11.0"
 
-"@commitlint/cz-commitlint@^16.2.3":
-  version "16.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-16.3.0.tgz#55964b3e1d71c38f203c8724dca0154b3620f098"
-  integrity sha512-Q+QLQmSIHEgzI18F3/7mqq3vwL0IN9k+Tjp9Um4adFnRXMtUTnEa0er0CXAXxWvoA/x/6nt3t7faAv2HugDIGg==
+"@commitlint/cz-commitlint@^17.0.3":
+  version "17.0.3"
+  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-17.0.3.tgz#32ad0ee04c2bce8c31016806755d780a09b6eb80"
+  integrity sha512-360I6wnaUWzc23D8Xn4B/cu8thy8GDJPZ4QsYk4xjVzDDyXZ6oXJB0+OlwkpWpSvjuLYAmEKiImvo0yLTASmlg==
   dependencies:
-    "@commitlint/ensure" "^16.2.1"
-    "@commitlint/load" "^16.3.0"
-    "@commitlint/types" "^16.2.1"
+    "@commitlint/ensure" "^17.0.0"
+    "@commitlint/load" "^17.0.3"
+    "@commitlint/types" "^17.0.0"
     chalk "^4.1.0"
     lodash "^4.17.21"
     word-wrap "^1.2.3"
@@ -316,6 +316,14 @@
   integrity sha512-/h+lBTgf1r5fhbDNHOViLuej38i3rZqTQnBTk+xEg+ehOwQDXUuissQ5GsYXXqI5uGy+261ew++sT4EA3uBJ+A==
   dependencies:
     "@commitlint/types" "^16.2.1"
+    lodash "^4.17.19"
+
+"@commitlint/ensure@^17.0.0":
+  version "17.0.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/ensure/-/ensure-17.0.0.tgz#781ff5f8870cb98ce4496d5c71649a4cd122a0e0"
+  integrity sha512-M2hkJnNXvEni59S0QPOnqCKIK52G1XyXBGw51mvh7OXDudCmZ9tZiIPpU882p475Mhx48Ien1MbWjCP1zlyC0A==
+  dependencies:
+    "@commitlint/types" "^17.0.0"
     lodash "^4.17.19"
 
 "@commitlint/execute-rule@^16.2.1":
@@ -354,7 +362,7 @@
     "@commitlint/rules" "^16.2.4"
     "@commitlint/types" "^16.2.1"
 
-"@commitlint/load@>6.1.1":
+"@commitlint/load@>6.1.1", "@commitlint/load@^17.0.3":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-17.0.3.tgz#683aa484a5515714512e442f2f4b11f75e66097a"
   integrity sha512-3Dhvr7GcKbKa/ey4QJ5MZH3+J7QFlARohUow6hftQyNjzoXXROm+RwpBes4dDFrXG1xDw9QPXA7uzrOShCd4bw==
