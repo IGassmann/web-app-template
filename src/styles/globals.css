@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  html {
+    @apply bg-gray-50 font-sans antialiased;
+  }
+  html,
+  body,
+  #__next {
+    @apply h-full;
+  }
+}
