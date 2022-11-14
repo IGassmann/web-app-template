@@ -1,35 +1,29 @@
 # Architecture Decision Records
 
-ADRs are automatically published to our Log4brains architecture knowledge base:
+Architectural Decision Records (ADRs) are automatically published to our architectural decision log:
 
-🔗 **[https://adr.igassmann.me/](https://adr.igassmann.me/)**
+🔗 **<https://architectural-decisions.github.io/>**
 
 Please use this link to browse them.
 
-## Development
+## Writing an ADR
 
-If not already done, install Log4brains:
+To list all ADRs, run:
 
-```bash
-yarn global add log4brains
+```sh
+yarn adr:list
 ```
-
-To preview the knowledge base locally, run:
-
-```bash
-log4brains preview
-```
-
-In preview mode, the Hot Reload feature is enabled: any change you make to a markdown file is applied live in the UI.
 
 To create a new ADR interactively, run:
 
-```bash
-log4brains adr new
+```sh
+yarn adr:new
 ```
 
-## More information
+To preview the architectural decision log locally, run:
 
-- [Log4brains documentation](https://github.com/thomvaill/log4brains/tree/master#readme)
-- [What is an ADR and why should you use them](https://github.com/thomvaill/log4brains/tree/master#-what-is-an-adr-and-why-should-you-use-them)
-- [ADR GitHub organization](https://adr.github.io/)
+```sh
+yarn adr:preview
+```
+
+In preview mode, the Hot Reload feature is enabled: any change you make to a markdown file is applied live in the UI.

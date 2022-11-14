@@ -55,11 +55,12 @@ Editor integrations are available [here](https://prettier.io/docs/en/editors.htm
 
 ### Architecture Decision Record
 
-This project uses ADRs for documenting architecture decisions. See
-[the relevant ADR](./docs/architectural-decisions/20211230-use-markdown-architectural-decision-records.md)
-for learning more.
+We use Architectural Decision Records (ADRs) for documenting architectural significant decisions.
+ADRs can be scoped to a specific package, or can be global.
 
-- [Project ADRs](./docs/architectural-decisions)
+To learn more about ADRs and browse them, check out [our architectural decision log](https://gosynthschool.github.io/monorepo).
+
+To write a new ADR, check out [./docs/architectural-decisions/README.md](./docs/architectural-decisions/README.md).
 
 ### REST API Guidelines
 
