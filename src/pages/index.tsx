@@ -1,9 +1,7 @@
-import React from 'react';
+import { NextPage } from 'next';
 
-const HomePage = () => (
-  <>
-    <h1>Web App Template</h1>
-  </>
+const HomePage: NextPage = () => (
+  <h1  className="text-3xl font-bold underline">Web App Template</h1>
 );
 
 export default HomePage;
