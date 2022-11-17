@@ -11,19 +11,19 @@ Please use this link to browse them.
 To list all ADRs, run:
 
 ```sh
-yarn adr:list
+pnpm adr:list
 ```
 
 To create a new ADR interactively, run:
 
 ```sh
-yarn adr:new
+pnpm adr:new
 ```
 
 To preview the architectural decision log locally, run:
 
 ```sh
-yarn adr:preview
+pnpm adr:preview
 ```
 
 In preview mode, the Hot Reload feature is enabled: any change you make to a markdown file is applied live in the UI.

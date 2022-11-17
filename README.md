@@ -12,14 +12,14 @@ Install the following tools:
 
 - [Git](https://git-scm.com/downloads)
 - [Node.js](https://nodejs.org/en/download/) (see version in the `engines` field of [`package.json`](./package.json))
-- [Yarn](https://yarnpkg.com/en/docs/install) (see version in the `engines` field of [`package.json`](./package.json))
+- [pnpm](https://pnpm.io/installation) (see version in the `engines` field of [`package.json`](./package.json))
 
 ### Setup
 
 1. Clone this repository
-2. Install dependencies by running `$ yarn`
+2. Install dependencies by running `$ pnpm install`
 3. Set up local environment variables by running `$ cp .env.development .env.local`
-4. Run `$ yarn dev`
+4. Run `$ pnpm dev`
 
 ## Development
 
@@ -30,7 +30,7 @@ JavaScript Style Guide](https://airbnb.io/javascript/). You can use the followin
 linting all project's files:
 
 ```sh
-$ yarn lint
+$ pnpm lint
 ```
 
 Staged files are automatically linted before commits. Be sure to **fix all linting errors before
@@ -44,7 +44,7 @@ Code formatting is handled by [Prettier](https://prettier.io/). You can use the 
 for formatting all project's files:
 
 ```sh
-$ yarn format
+$ pnpm format
 ```
 
 Staged files are automatically formatted before commits.

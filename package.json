@@ -76,7 +76,7 @@
   },
   "engines": {
     "node": "16.x",
-    "yarn": "^1.22.17"
+    "pnpm": "7.16.1"
   },
   "private": true
 }
