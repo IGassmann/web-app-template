@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@babel/core": "7.18.9",
-    "@clerk/nextjs": "3.8.0",
+    "@clerk/nextjs": "4.6.0",
     "@dnd-kit/core": "5.0.3",
     "@dnd-kit/sortable": "6.0.1",
     "@dnd-kit/utilities": "3.2.0",
