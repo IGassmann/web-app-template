@@ -50,7 +50,7 @@
     "@commitlint/types": "17.0.0",
     "@tailwindcss/typography": "0.5.7",
     "@types/node": "16.11.45",
-    "@types/react": "18.0.21",
+    "@types/react": "18.0.25",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
     "autoprefixer": "10.4.12",
