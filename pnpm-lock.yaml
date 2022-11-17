@@ -1,54 +1,54 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@babel/core': ^7.18.5
-  '@clerk/nextjs': ^3.6.8
-  '@clerk/types': ^2.17.0
-  '@commitlint/cli': ^17.1.2
-  '@commitlint/config-conventional': ^17.1.0
-  '@commitlint/cz-commitlint': ^17.1.2
-  '@commitlint/types': ^17.0.0
-  '@dnd-kit/core': ^5.0.3
-  '@dnd-kit/sortable': ^6.0.1
-  '@dnd-kit/utilities': ^3.2.0
-  '@headlessui/react': ^1.7.3
-  '@heroicons/react': ^1.0.6
-  '@segment/analytics-next': ^1.38.0
-  '@tailwindcss/forms': ^0.5.2
-  '@tailwindcss/typography': ^0.5.7
-  '@tippyjs/react': ^4.2.6
+  '@babel/core': 7.18.9
+  '@clerk/nextjs': 3.8.0
+  '@clerk/types': 2.20.0
+  '@commitlint/cli': 17.1.2
+  '@commitlint/config-conventional': 17.1.0
+  '@commitlint/cz-commitlint': 17.1.2
+  '@commitlint/types': 17.0.0
+  '@dnd-kit/core': 5.0.3
+  '@dnd-kit/sortable': 6.0.1
+  '@dnd-kit/utilities': 3.2.0
+  '@headlessui/react': 1.7.3
+  '@heroicons/react': 2.0.13
+  '@segment/analytics-next': 1.41.0
+  '@tailwindcss/forms': 0.5.2
+  '@tailwindcss/typography': 0.5.7
+  '@tippyjs/react': 4.2.6
   '@types/node': 16.x
   '@types/react': 18.0.21
-  '@typescript-eslint/eslint-plugin': ^5.42.0
-  '@typescript-eslint/parser': ^5.42.0
-  autoprefixer: ^10.4.12
-  clsx: ^1.1.1
-  commitizen: ^4.2.4
-  cross-env: ^7.0.3
-  dayjs: ^1.11.3
+  '@typescript-eslint/eslint-plugin': 5.42.0
+  '@typescript-eslint/parser': 5.42.0
+  autoprefixer: 10.4.12
+  clsx: 1.2.1
+  commitizen: 4.2.5
+  cross-env: 7.0.3
+  dayjs: 1.11.4
   eslint: 8.18.0
-  eslint-config-airbnb: ^19.0.4
-  eslint-config-airbnb-typescript: ^17.0.0
-  eslint-config-next: ^12.1.6
-  eslint-config-prettier: ^8.5.0
-  eslint-plugin-import: ^2.26.0
-  eslint-plugin-jsx-a11y: ^6.6.0
-  eslint-plugin-react: ^7.30.1
-  eslint-plugin-react-hooks: ^4.6.0
-  husky: ^8.0.1
-  lint-staged: ^13.0.3
-  log4brains: ^1.0.1
+  eslint-config-airbnb: 19.0.4
+  eslint-config-airbnb-typescript: 17.0.0
+  eslint-config-next: 12.2.2
+  eslint-config-prettier: 8.5.0
+  eslint-plugin-import: 2.26.0
+  eslint-plugin-jsx-a11y: 6.6.0
+  eslint-plugin-react: 7.30.1
+  eslint-plugin-react-hooks: 4.6.0
+  husky: 8.0.1
+  lint-staged: 13.0.3
+  log4brains: 1.0.1
   next: 12.1.6
-  postcss: ^8.4.14
+  postcss: 8.4.14
   prettier: 2.7.1
-  prettier-plugin-tailwindcss: ^0.1.13
+  prettier-plugin-tailwindcss: 0.1.13
   react: 18.2.0
   react-dom: 18.2.0
-  react-hook-form: ^7.36.1
-  react-hot-toast: ^2.2.0
-  react-query: ^3.39.1
-  tailwindcss: ^3.1.4
-  tsc-files: ^1.1.3
+  react-hook-form: 7.36.1
+  react-hot-toast: 2.3.0
+  react-query: 3.39.2
+  tailwindcss: 3.1.6
+  tsc-files: 1.1.3
   typescript: 4.7.4
 
 dependencies:
@@ -58,7 +58,7 @@ dependencies:
   '@dnd-kit/sortable': 6.0.1_h6rtyfwg74iwkvvbnwusj33zwq
   '@dnd-kit/utilities': 3.2.0_react@18.2.0
   '@headlessui/react': 1.7.3_biqbaboplfbrettd7655fr4n2y
-  '@heroicons/react': 1.0.6_react@18.2.0
+  '@heroicons/react': 2.0.13_react@18.2.0
   '@segment/analytics-next': 1.41.0
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.6
   '@tippyjs/react': 4.2.6_biqbaboplfbrettd7655fr4n2y
@@ -710,8 +710,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@heroicons/react/1.0.6_react@18.2.0:
-    resolution: {integrity: sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==}
+  /@heroicons/react/2.0.13_react@18.2.0:
+    resolution: {integrity: sha512-iSN5XwmagrnirWlYEWNPdCDj9aRYVD/lnK3JlsC9/+fqGF80k8C7rl+1HCvBX0dBoagKqOFBs6fMhJJ1hOg1EQ==}
     peerDependencies:
       react: '>= 16'
     dependencies:
