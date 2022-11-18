@@ -1,13 +1,12 @@
-import { type AppType } from "next/app";
-import Head from "next/head";
-import { Inter } from '@next/font/google'
-import "@/styles/globals.css";
+import { type AppType } from 'next/app';
+import Head from 'next/head';
+import { Inter } from '@next/font/google';
+import '@/styles/tailwind.css';
 
 const interFont = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-})
-
+});
 
 const MyApp: AppType = ({ Component, pageProps }) => (
   <>
@@ -15,7 +14,7 @@ const MyApp: AppType = ({ Component, pageProps }) => (
       <title>Web App Template</title>
     </Head>
     <div className={`${interFont.variable} font-sans`}>
-    <Component {...pageProps} />
+      <Component {...pageProps} />
     </div>
   </>
 );
