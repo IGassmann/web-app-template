@@ -19,7 +19,7 @@
     "format": "prettier . --write --ignore-path ./.gitignore",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install frontend/.husky"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@clerk/nextjs": "4.6.0",
