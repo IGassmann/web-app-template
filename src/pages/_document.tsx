@@ -1,8 +1,8 @@
-import { DocumentType } from "next/dist/shared/lib/utils";
-import { Html, Head, Main, NextScript } from "next/document";
+import { DocumentType } from 'next/dist/shared/lib/utils';
+import { Html, Head, Main, NextScript } from 'next/document';
 
 const MyDocument: DocumentType = () => (
-  <Html>
+  <Html className="bg-white antialiased" lang="en">
     <Head>
       <link rel="icon" type="image/svg+xml" href="/icon.svg" />
       <link rel="icon" sizes="192x192" href="/icon.png" />
