@@ -180,18 +180,17 @@ The type of commit must be one of the following:
 
 - `feat`: a new feature
 - `fix`: a bug fix
-- `refactor`: a code change made to make it easier to understand and cheaper to modify without
-  changing its external behavior
-- `rewrite`: a re-implementation of an existing functionality
+- `refactor`: a code change made to make it easier to understand and cheaper to modify without changing its observable behavior
+- `rewrite`: A re-implementation of an existing functionality
 - `perf`: a code change that improves performance
 - `docs`: documentation only changes
-- `style`: changes that do not affect the meaning of the code
+- `style`: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
 - `test`: adding missing tests or correcting existing tests
 - `build`: changes that affect the build system or external dependencies (example scopes: `deps`,
-  `typescript`, `ci`...)
-- `config`: configuration changes (example scopes: `jest`, `package-json`, `eslint`)
+  `pnpm`, `ci`...)
+- `config`: changes to project configuration files (example scopes: `jest`, `package-json`, `eslint`)
 - `chore`: maintenance tasks
-- `revert`: a revert of a commit
+- `revert`: a revert of a previous commit
 
 ### Scope
 
