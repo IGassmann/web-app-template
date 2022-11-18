@@ -18,6 +18,11 @@ rules:
       explicitSpread: ignore
       exceptions:
         - Component
+  unicorn/filename-case:
+    - error
+    - cases:
+        camelCase: true
+        pascalCase: true
 overrides:
   - files: './src/**/?(*.)+test.{tsx,ts}'
     extends:
