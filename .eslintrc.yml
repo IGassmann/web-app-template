@@ -1,25 +1,27 @@
+root: true
 extends:
   - airbnb
+  - airbnb/hooks
   - airbnb-typescript
+  - plugin:unicorn/recommended
   - next/core-web-vitals
   - prettier
 rules:
-  react/function-component-definition: off
-  react/jsx-props-no-spreading: off
-  react/require-default-props: off
-  jsx-a11y/anchor-is-valid:
+  react/function-component-definition:
     - error
-    - components:
-        - Link
-      specialLink:
-        - to
-      aspects:
-        - invalidHref
-        - preferButton
+    - namedComponents: arrow-function
+      unnamedComponents: arrow-function
+  react/jsx-props-no-spreading:
+    - error
+    - html: enforce
+      custom: enforce
+      explicitSpread: ignore
+      exceptions:
+        - Component
 overrides:
-  - files:
-      - '**/*'
-    parser: '@typescript-eslint/parser'
-    parserOptions:
-      project: ./tsconfig.json
-      warnOnUnsupportedTypeScriptVersion: false
+  - files: './src/**/?(*.)+test.{tsx,ts}'
+    extends:
+      - plugin:jest/recommended
+      - plugin:testing-library/react
+parserOptions:
+  project: ./tsconfig.json

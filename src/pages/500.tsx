@@ -1,13 +1,11 @@
-import React from 'react';
-import { NextPage } from 'next';
+import React from "react";
+import { NextPage } from "next";
 
-const ServerErrorPage: NextPage = () => {
-  return (
-    <>
-      <h1>Server Error</h1>
-      <p>Oops, somewthing went wrong.</p>
-    </>
-  );
-};
+const ServerErrorPage: NextPage = () => (
+  <>
+    <h1>Server Error</h1>
+    <p>Oops, something went wrong.</p>
+  </>
+);
 
 export default ServerErrorPage;
