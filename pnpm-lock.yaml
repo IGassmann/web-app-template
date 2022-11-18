@@ -12,6 +12,7 @@ specifiers:
   '@dnd-kit/utilities': 3.2.0
   '@headlessui/react': 1.7.4
   '@heroicons/react': 2.0.13
+  '@next/font': ^13.0.4
   '@segment/analytics-next': 1.46.1
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/typography': 0.5.8
@@ -55,6 +56,7 @@ dependencies:
   '@dnd-kit/utilities': 3.2.0_react@18.2.0
   '@headlessui/react': 1.7.4_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 2.0.13_react@18.2.0
+  '@next/font': 13.0.4
   '@segment/analytics-next': 1.46.1
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@tippyjs/react': 4.2.6_biqbaboplfbrettd7655fr4n2y
@@ -827,6 +829,10 @@ packages:
     dependencies:
       glob: 7.1.7
     dev: true
+
+  /@next/font/13.0.4:
+    resolution: {integrity: sha512-csZhVqe870p7XE03WfbDLzjVwdBAWxe6/lWGQosfqY/XN5tsmfDLpj442veicfCiiuF7/ydSnAAJxH8PQVBVWQ==}
+    dev: false
 
   /@next/swc-android-arm-eabi/13.0.3:
     resolution: {integrity: sha512-uxfUoj65CdFc1gX2q7GtBX3DhKv9Kn343LMqGNvXyuTpYTGMmIiVY7b9yF8oLWRV0gVKqhZBZifUmoPE8SJU6Q==}
