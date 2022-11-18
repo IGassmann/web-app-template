@@ -1,6 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-COMMIT_SOURCE=$2
-
-if [ -z "$COMMIT_SOURCE" ]; then exec < /dev/tty && npx cz --hook || true; fi
