@@ -13,7 +13,6 @@ specifiers:
   '@segment/analytics-next': 1.46.1
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/typography': 0.5.8
-  '@tippyjs/react': 4.2.6
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@typescript-eslint/eslint-plugin': 5.43.0
@@ -53,7 +52,6 @@ dependencies:
   '@next/font': 13.0.4
   '@segment/analytics-next': 1.46.1
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
-  '@tippyjs/react': 4.2.6_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   dayjs: 1.11.6
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
@@ -762,10 +760,6 @@ packages:
       tiny-glob: 0.2.9
       tslib: 2.4.1
     dev: true
-
-  /@popperjs/core/2.11.6:
-    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
-    dev: false
 
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
@@ -1946,17 +1940,6 @@ packages:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
       '@testing-library/dom': 8.19.0
-    dev: false
-
-  /@tippyjs/react/4.2.6_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-91RicDR+H7oDSyPycI13q3b7o4O60wa2oRbjlz2fyRLmHImc4vyDwuUP8NtZaN0VARJY5hybvDYrFzhY9+Lbyw==}
-    peerDependencies:
-      react: '>=16.8'
-      react-dom: '>=16.8'
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      tippy.js: 6.3.7
     dev: false
 
   /@tsconfig/node10/1.0.9:
@@ -6198,12 +6181,6 @@ packages:
 
   /tiny-hashes/1.0.1:
     resolution: {integrity: sha512-knIN5zj4fl7kW4EBU5sLP20DWUvi/rVouvJezV0UAym2DkQaqm365Nyc8F3QEiOvunNDMxR8UhcXd1d5g+Wg1g==}
-    dev: false
-
-  /tippy.js/6.3.7:
-    resolution: {integrity: sha512-E1d3oP2emgJ9dRQZdf3Kkn0qJgI6ZLpyS5z6ZkY1DF3kaQaBsGZsndEpHwx+eC+tYM41HaSNvNtLx8tU57FzTQ==}
-    dependencies:
-      '@popperjs/core': 2.11.6
     dev: false
 
   /tmp/0.0.33:
