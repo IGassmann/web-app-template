@@ -14,6 +14,8 @@
   "main": "n/a",
   "scripts": {
     "env:pull": "vercel env pull .env.local",
+    "env:add": "vercel env add",
+    "env:rm": "vercel env rm",
     "dev": "next dev",
     "dev:debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "lint": "next lint --fix",
