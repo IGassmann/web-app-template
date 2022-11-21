@@ -1,20 +1,17 @@
 # Node dependencies
 node_modules/
 
-# Build output
-/dist/
+# Next.js
+/.next/
 
-# Test coverage output
-/coverage/
+# Turbo
+/.turbo
+
+# Vercel
+/.vercel
 
 # Local environment variables
 .env*.local
 
-# Vercel project linking configuration
-/.vercel
-
 # Type check build info
 *.tsbuildinfo
-
-# Turbo
-.turbo
