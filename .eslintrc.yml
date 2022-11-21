@@ -28,6 +28,7 @@ overrides:
   - files: './src/**/?(*.)+test.{tsx,ts}'
     extends:
       - plugin:jest/recommended
+      - plugin:jest-dom/recommended
       - plugin:testing-library/react
 parserOptions:
   project: ./tsconfig.json
