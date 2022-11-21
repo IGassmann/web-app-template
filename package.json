@@ -45,7 +45,7 @@
     "@headlessui/tailwindcss": "0.1.1",
     "@tailwindcss/forms": "0.5.3",
     "@tailwindcss/typography": "0.5.8",
-    "@types/node": "18.11.9",
+    "@types/node": "18.x",
     "@types/react": "18.0.25",
     "@typescript-eslint/eslint-plugin": "5.43.0",
     "autoprefixer": "10.4.13",
@@ -71,7 +71,7 @@
     "typescript": "4.8.4"
   },
   "engines": {
-    "node": "18.11.0",
+    "node": "18.x",
     "pnpm": "7.16.1"
   },
   "packageManager": "pnpm@7.16.1",
