@@ -5,6 +5,7 @@ extends:
   - airbnb-typescript
   - plugin:unicorn/recommended
   - next/core-web-vitals
+  - turbo
   - prettier
 rules:
   react/function-component-definition:
