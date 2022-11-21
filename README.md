@@ -18,7 +18,7 @@ Install the following tools:
 
 1. Clone this repository
 2. Install dependencies by running `$ pnpm install`
-3. Set up local environment variables by running `$ cp .env.development .env.local`
+3. Set up local environment variables by running `$ pnpm env:pull`
 4. Run `$ pnpm dev`
 
 ## Development
