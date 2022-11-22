@@ -21,11 +21,11 @@ const SegmentAnalyticsProvider: React.FC<AnalyticsProviderProperties> = ({
 };
 
 function useSegmentAnalytics(): AnalyticsBrowser {
-  const result = useContext(SegmentAnalyticsContext);
-  if (!result) {
+  const context = useContext(SegmentAnalyticsContext);
+  if (!context) {
     throw new Error('useAnalytics must be used within a SegmentAnalyticsProvider');
   }
-  return result;
+  return context;
 }
 
 export { SegmentAnalyticsProvider, useSegmentAnalytics };

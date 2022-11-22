@@ -10,5 +10,6 @@
     "lint": {
       "outputs": []
     }
-  }
+  },
+  "globalEnv": ["NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY"]
 }

@@ -19,13 +19,9 @@ rules:
       explicitSpread: ignore
       exceptions:
         - Component
-  unicorn/filename-case:
-    - error
-    - cases:
-        camelCase: true
-        pascalCase: true
+  unicorn/filename-case: off
 overrides:
-  - files: './src/**/?(*.)+test.{tsx,ts}'
+  - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
     extends:
       - plugin:jest/recommended
       - plugin:jest-dom/recommended
