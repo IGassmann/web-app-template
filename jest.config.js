@@ -1,4 +1,5 @@
-const nextJest = require('next/jest');
+// @ts-check
+const { default: nextJest } = require('next/jest');
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
@@ -13,7 +14,7 @@ const customJestConfig = {
     // Handle path aliases
     '^@/(.*)$': '<rootDir>/src/$1',
     // Handle test-utils file import
-    "^test-utils$": '<rootDir>/test/test-utils',
+    '^test-utils$': '<rootDir>/test/test-utils',
   },
   testEnvironment: 'jsdom',
 };

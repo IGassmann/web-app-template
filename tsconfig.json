@@ -20,6 +20,13 @@
       "test-utils": ["./test/test-utils"]
     }
   },
-  "include": ["./src/**/*", "./test/**/*", "./next-env.d.ts"],
+  "include": [
+    "./src/**/*",
+    "./test/**/*",
+    "./next-env.d.ts",
+    "./next.config.js",
+    "./jest.config.js",
+    "./tailwind.config.js"
+  ],
   "exclude": ["node_modules"]
 }

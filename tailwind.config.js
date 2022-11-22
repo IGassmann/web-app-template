@@ -2,7 +2,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss/types').Config} */
-const config = {
+const tailwindCSSConfig = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -11,7 +11,11 @@ const config = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@headlessui/tailwindcss')],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@headlessui/tailwindcss'),
+  ],
 };
 
-module.exports = config;
+module.exports = tailwindCSSConfig;
