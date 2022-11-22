@@ -23,6 +23,10 @@ Install the following tools:
 
 ## Development
 
+### Testing
+
+Run `$ pnpm test` to run all tests.
+
 ### Code Linting
 
 Code linting is handled by [ESLint](https://eslint.org/). It's configured to follow [Airbnb
