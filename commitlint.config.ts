@@ -38,12 +38,13 @@ const Configuration: UserConfig = {
             emoji: '🔁',
           },
           config: {
-            description: 'Changes to project configuration files (example scopes: `jest`, `package-json`, `eslint`)',
+            description:
+              'Changes to project configuration files (example scopes: `jest`, `package-json`, `eslint`)',
             title: 'Configuration',
             emoji: '🔧',
           },
           chore: {
-            description: "Maintenance tasks",
+            description: 'Maintenance tasks',
             title: 'Chores',
             emoji: '♻️',
           },
