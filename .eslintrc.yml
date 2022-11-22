@@ -20,6 +20,10 @@ rules:
       exceptions:
         - Component
   unicorn/filename-case: off
+  unicorn/prevent-abbreviations:
+    - error
+    - allowList:
+        props: true
 overrides:
   - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
     extends:

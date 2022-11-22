@@ -26,6 +26,8 @@
     "./next-env.d.ts",
     "./next.config.js",
     "./jest.config.js",
+    "./sentry.client.config.ts",
+    "./sentry.server.config.ts",
     "./tailwind.config.js"
   ],
   "exclude": ["node_modules"]
