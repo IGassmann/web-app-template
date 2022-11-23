@@ -9,7 +9,7 @@
 We need a way to build a web application. We want to use a framework that is well-supported and
 that we can bet on for the long term. Which framework should we use?
 
-## Decision Drivers <!-- optional -->
+## Decision Drivers
 
 - Made for React
 - Well maintained
