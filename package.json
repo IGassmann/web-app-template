@@ -24,6 +24,9 @@
     "format": "prettier . --write --ignore-path ./.gitignore",
     "build": "next build",
     "start": "next start",
+    "adr:list": "log4brains adr list",
+    "adr:new": "log4brains adr new",
+    "adr:preview": "log4brains preview",
     "prepare": "husky install"
   },
   "dependencies": {
