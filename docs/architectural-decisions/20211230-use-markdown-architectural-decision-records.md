@@ -1,7 +1,6 @@
 # Use Markdown Architectural Decision Records
 
 - Status: accepted
-- Date: 2021-12-29
 - Tags: doc
 
 ## Context and Problem Statement
@@ -29,14 +28,10 @@ Chosen option: "MADR 2.1.2 with Log4brains patch", because
 - The MADR structure is comprehensible and facilitates usage & maintenance.
 - The MADR project is vivid.
 - Version 2.1.2 is the latest one available when starting to document ADRs.
-- The Log4brains patch adds more features, like tags.
+  - The Log4brains patch adds more features, like tags.
 
 The "Log4brains patch" performs the following modifications to the original template:
 
 - Change the ADR filenames format (`NNN-adr-name` becomes `YYYYMMDD-adr-name`), to avoid conflicts during Git merges.
 - Add a `draft` status, to enable collaborative writing.
 - Add a `Tags` field.
-
-## Links
-
-- Relates to [Use Log4brains to manage the ADRs](20211230-use-log4brains-to-manage-the-adrs.md)
