@@ -101,22 +101,14 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
           name: build-artifacts
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version-file: 'package.json'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
+          path: .vercel/output
 
       - name: Deploy build artifacts to Vercel
         run: pnpm vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
