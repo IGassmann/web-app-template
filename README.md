@@ -2,6 +2,10 @@
 
 Web app template is a simple but complete template for creating web apps.
 
+## Features
+
+- [x] [React](https://reactjs.org/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
