@@ -1,6 +1,6 @@
 # Web App Template
 
-Web app template built with [Next.js](https://nextjs.org/).
+Web app template is a simple but complete template for creating web apps.
 
 ## Getting Started
 
