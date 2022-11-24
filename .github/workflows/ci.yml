@@ -96,7 +96,11 @@ jobs:
       - build
     timeout-minutes: 5
     runs-on: ubuntu-latest
-    environment: production
+    outputs:
+      url: ${{ steps.deploy.outputs.url }}
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -111,4 +115,5 @@ jobs:
           path: .vercel/output
 
       - name: Deploy build artifacts to Vercel
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}
+        id: deploy
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} > $GITHUB_OUTPUT
