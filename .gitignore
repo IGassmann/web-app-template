@@ -8,7 +8,7 @@ node_modules/
 /.turbo
 
 # Vercel
-/.vercel
+.vercel
 
 # Local environment variables
 .env*.local
