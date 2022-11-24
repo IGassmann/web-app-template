@@ -27,6 +27,8 @@ Install the following tools:
 
 Run `$ pnpm test` to run all tests.
 
+Run `$ pnpm test:watch` to run all tests in watch mode.
+
 ### Code Linting
 
 Code linting is handled by [ESLint](https://eslint.org/). It's configured to follow [Airbnb
