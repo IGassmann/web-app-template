@@ -5,7 +5,7 @@
       "outputs": [".next/**"]
     },
     "test": {
-      "dependsOn": []
+      "outputs": []
     },
     "lint": {
       "outputs": []
