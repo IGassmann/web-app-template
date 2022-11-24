@@ -116,4 +116,4 @@ jobs:
 
       - name: Deploy build artifacts to Vercel
         id: deploy
-        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} > $GITHUB_OUTPUT
+        run: vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }} >> $GITHUB_OUTPUT
