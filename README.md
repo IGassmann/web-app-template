@@ -15,15 +15,19 @@ To get a local copy up and running follow these simple steps.
 Install the following tools:
 
 - [Git](https://git-scm.com/downloads)
-- [Node.js](https://nodejs.org/en/download/) (see version in the `engines` field of [`package.json`](./package.json))
-- [pnpm](https://pnpm.io/installation) (see version in the `engines` field of [`package.json`](./package.json))
+- [Node.js](https://nodejs.org/en/download/) (see required version in the `engines` field of
+  [`package.json`](./package.json))
+  - We recommend using [fnm](https://github.com/Schniz/fnm) to manage Node.js versions. After
+    installing it, run `$ fnm install` to install the required Node.js version.
 
 ### Setup
 
 1. Clone this repository
-2. Install dependencies by running `$ pnpm install`
-3. Set up local environment variables by running `$ pnpm env:pull`
-4. Run `$ pnpm dev`
+2. Install [`pnpm`](https://pnpm.io/installation) with Corepack by running `$ corepack enable; corepack prepare`
+3. Install dependencies by running `$ pnpm install`
+4. Set up local environment variables by running `$ pnpm env:pull`
+5. Run `$ pnpm dev`
+6. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Development
 
