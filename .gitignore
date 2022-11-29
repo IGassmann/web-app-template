@@ -2,10 +2,10 @@
 node_modules/
 
 # Next.js
-/.next/
+.next
 
 # Turbo
-/.turbo
+.turbo
 
 # Vercel
 .vercel
@@ -15,7 +15,7 @@ node_modules/
 
 # TypeScript
 *.tsbuildinfo
-/next-env.d.ts
+next-env.d.ts
 
 # Sentry
 .sentryclirc
