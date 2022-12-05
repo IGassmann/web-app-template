@@ -1,54 +1,23 @@
 <!--- Provide a general summary of your changes in the title -->
-<!--- above using  the project's commit convention format. -->
+<!--- above using the project's commit convention format. -->
 <!--- If the pull request contains multiple types of changes, -->
-<!--- e.g.: feat and refactor, split the pull request into multiple ones. -->
+<!--- consider splitting the pull request into multiple ones. -->
 
 ## Description
 
-<!--- Describe your changes in detail. -->
+<!--- Provide a clear and concise description of the changes you've made. -->
+<!--- If needed, justify why you've made these changes. -->
 
-## Motivation and Context
+## Context
 
-<!--- Why is this change required? What problem does it solve? -->
-<!--- If it fixes an open issue, please link to the issue here. -->
-<!--- If it is related to user stories, please link to the relevant user stories here. -->
+<!--- Include any relevant details, such as relevant issues  -->
+<!--- or links to related pull requests or code. This will  -->
+<!--- provide context for your changes and make it easier  -->
+<!--- for others to understand your code. -->
 
 ## How Has This Been Tested?
 
-<!--- Please describe in detail how you tested your changes. -->
-<!--- Include details of your testing environment, and the tests you ran to -->
-<!--- see how your change affects other areas of the code, etc. -->
+<!--- Describe how you tested your changes. -->
 
-## Screenshots (if appropriate)
-
-## Checklist
-
-<!--- Go over all the following points, and put an `x` in all the boxes that apply. -->
-<!--- If you're unsure about any of these, don't hesitate to ask. -->
-
-- [ ] My changes meet the acceptance criteria of the mentioned user stories and issues.
-- [ ] My code follows the conventions of this project.
-- [ ] I have updated the documentation accordingly.
-- [ ] I have added tests to cover my changes.
-- [ ] I have reviewed the PR myself before submitting it for review.
-
-## Deployment Notes
-
-<!--- Notes regarding deployment of the contained body of work. -->
-<!--- These should note any new dependencies, new scripts, etc. -->
-
-**New environment variables**:
-
-- `ENV_VAR_NAME`: env var details
-
-**New scripts**:
-
-- `script-name`: script details
-
-**New dependencies**:
-
-- `dependency@ˆx.x.x`: dependency details
-
-**New dev dependencies**:
-
-- `dependency@ˆx.x.x`: dependency details
+<!--- Check out the Pull Request Guidelines at: -->
+<!--- docs/pull-request-guidelines.md  -->
