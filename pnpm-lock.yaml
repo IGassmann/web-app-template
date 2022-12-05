@@ -40,7 +40,7 @@ specifiers:
   husky: 8.0.2
   jest: 29.3.1
   jest-environment-jsdom: 29.3.1
-  lint-staged: 13.0.3
+  lint-staged: 13.0.4
   next: 13.0.4
   postcss: 8.4.19
   postcss-focus-visible: 7.1.0
@@ -105,7 +105,7 @@ devDependencies:
   husky: 8.0.2
   jest: 29.3.1_odkjkoia5xunhxkdrka32ib6vi
   jest-environment-jsdom: 29.3.1
-  lint-staged: 13.0.3
+  lint-staged: 13.0.4
   postcss: 8.4.19
   postcss-focus-visible: 7.1.0_postcss@8.4.19
   prettier: 2.7.1
@@ -882,6 +882,7 @@ packages:
         integrity: sha512-u/pV6rCAJrCUN+HylBHLzZ4qj1Ew3+eN9GBPhNi9otGxtOfA8b+8nJSxaNbcC23Ins/kcpjGf9zPSVW7628Umw==,
       }
     engines: { node: '>=v14' }
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 17.1.0
       '@commitlint/execute-rule': 17.0.0
@@ -9747,14 +9748,6 @@ packages:
       immediate: 3.0.6
     dev: false
 
-  /lilconfig/2.0.5:
-    resolution:
-      {
-        integrity: sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==,
-      }
-    engines: { node: '>=10' }
-    dev: true
-
   /lilconfig/2.0.6:
     resolution:
       {
@@ -9776,10 +9769,10 @@ packages:
         integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==,
       }
 
-  /lint-staged/13.0.3:
+  /lint-staged/13.0.4:
     resolution:
       {
-        integrity: sha512-9hmrwSCFroTSYLjflGI8Uk+GWAwMB4OlpU4bMJEAT5d/llQwtYKoim4bLOyLCuWFAhWEupE0vkIFqtw/WIsPug==,
+        integrity: sha512-HxlHCXoYRsq9QCby5wFozmZW00hMs/9e3l+/dz6Qr8Kle4UH0kJTdABAbqhzG+3pcG6QjL9kz7NgGBfph+a5dw==,
       }
     engines: { node: ^14.13.1 || >=16.0.0 }
     hasBin: true
@@ -9789,8 +9782,8 @@ packages:
       commander: 9.4.1
       debug: 4.3.4
       execa: 6.1.0
-      lilconfig: 2.0.5
-      listr2: 4.0.5
+      lilconfig: 2.0.6
+      listr2: 5.0.6
       micromatch: 4.0.5
       normalize-path: 3.0.0
       object-inspect: 1.12.2
@@ -9802,12 +9795,12 @@ packages:
       - supports-color
     dev: true
 
-  /listr2/4.0.5:
+  /listr2/5.0.6:
     resolution:
       {
-        integrity: sha512-juGHV1doQdpNT3GSTs9IUN43QJb7KHdF9uqg7Vufs/tG9VTzpFphqF4pm/ICdAABGQxsyNn9CiYA3StkI6jpwA==,
+        integrity: sha512-u60KxKBy1BR2uLJNTWNptzWQ1ob/gjMzIJPZffAENzpZqbMZ/5PrXXOomDcevIS/+IB7s1mmCEtSlT2qHWMqag==,
       }
-    engines: { node: '>=12' }
+    engines: { node: ^14.13.1 || >=16.0.0 }
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
     peerDependenciesMeta:
