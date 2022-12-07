@@ -11,9 +11,9 @@ jobs:
     uses: IGassmann/web-app-template/.github/workflows/development.yaml@main
     with:
       environment: production
+    secrets:
       vercel-organization-id: ${{ secrets.VERCEL_ORG_ID }}
       vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-    secrets:
       vercel-token: ${{ secrets.VERCEL_TOKEN }}
 
   deploy:
