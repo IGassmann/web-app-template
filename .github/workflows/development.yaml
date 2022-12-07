@@ -16,10 +16,10 @@ on:
     secrets:
       vercel-organization-id:
         description: 'The Vercel organization id'
-        type: string
+        required: string
       vercel-project-id:
         description: 'The Vercel project id'
-        type: string
+        required: string
       vercel-token:
         description: 'The Vercel token'
         required: true

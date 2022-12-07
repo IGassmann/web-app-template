@@ -8,7 +8,7 @@ on:
 jobs:
   lint-test-build:
     name: Lint, Test, and Build
-    uses: IGassmann/web-app-template/.github/workflows/development.yaml@main
+    uses: ./.github/workflows/development.yaml
     with:
       environment: production
     secrets:
