@@ -1,0 +1,56 @@
+name: Preview Deployment
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  lint-test-build:
+    name: Lint, Test, and Build
+    uses: IGassmann/web-app-template/.github/workflows/development.yaml@main
+    with:
+      environment: preview
+    secrets:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+  deploy:
+    name: Deploy to Preview
+    needs:
+      - lint-test-build
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.deploy.outputs.url }}
+    environment:
+      name: preview
+      url: ${{ steps.deploy.outputs.url }}
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - name: Install Vercel CLI
+        run: pnpm install --filter "@vercel/cli"
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: .vercel/output
+
+      - name: Deploy build artifacts to Vercel
+        id: deploy
+        run: echo "url=$(pnpm vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})" >> $GITHUB_OUTPUT

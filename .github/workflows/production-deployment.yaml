@@ -1,0 +1,63 @@
+name: Production Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  environment: production
+  vercel-organization-id: ${{ secrets.VERCEL_ORG_ID }}
+  vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+  vercel-token: ${{ secrets.VERCEL_TOKEN }}
+
+jobs:
+  lint-test-build:
+    name: Lint, Test, and Build
+    uses: IGassmann/web-app-template/.github/workflows/development.yaml@main
+    with:
+      environment: ${{ env.environment }}
+      vercel-organization-id: ${{ env.vercel-organization-id }}
+      vercel-project-id: ${{ env.vercel-project-id }}
+    secrets:
+      vercel-token: ${{ env.vercel-token }}
+
+  deploy:
+    name: Deploy to Production
+    needs:
+      - lint-test-build
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    outputs:
+      url: ${{ steps.deploy.outputs.url }}
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.url }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'pnpm'
+
+      - name: Install Vercel CLI
+        run: pnpm install --filter "@vercel/cli"
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifacts
+          path: .vercel/output
+
+      - name: Deploy build artifacts to Vercel
+        id: deploy
+        env:
+          VERCEL_ORG_ID: ${{ env.vercel-organization-id }}
+          VERCEL_PROJECT_ID: ${{ env.vercel-project-id }}
+        run: echo "url=$(pnpm vercel deploy --prebuilt --prod --token=${{ env.vercel-token }})" >> $GITHUB_OUTPUT
