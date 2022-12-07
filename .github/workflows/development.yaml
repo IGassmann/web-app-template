@@ -96,7 +96,7 @@ jobs:
         run: pnpm vercel pull --yes --environment=${{ inputs.environment }} --token=${{ secrets.vercel-token }}
 
       - name: Build application
-        run: pnpm vercel build ${{ inputs.environment == "production" && "--prod" }} --token=${{ secrets.vercel-token }}
+        run: pnpm vercel build ${{ inputs.environment == 'production' && '--prod' }} --token=${{ secrets.vercel-token }}
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
