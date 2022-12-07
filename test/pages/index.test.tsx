@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from '@/pages';
 import { render, screen } from 'test-utils';
 

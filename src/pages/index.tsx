@@ -1,6 +1,6 @@
 import { useSegmentAnalytics } from '@/features/analytics/SegmentAnalyticsContext';
-import { NextPage } from 'next';
 import { useEffect } from 'react';
+import type { NextPage } from 'next';
 
 const HomePage: NextPage = () => {
   const analytics = useSegmentAnalytics();

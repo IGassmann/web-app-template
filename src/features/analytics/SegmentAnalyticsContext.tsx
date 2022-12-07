@@ -1,11 +1,12 @@
 import { AnalyticsBrowser } from '@segment/analytics-next';
-import React, { createContext, ReactNode, useContext, useMemo } from 'react';
+import type React from 'react';
+import { createContext, useContext, useMemo } from 'react';
 
 const SegmentAnalyticsContext = createContext<AnalyticsBrowser | undefined>(undefined);
 
 type AnalyticsProviderProperties = {
   writeKey: string;
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 const SegmentAnalyticsProvider: React.FC<AnalyticsProviderProperties> = ({
