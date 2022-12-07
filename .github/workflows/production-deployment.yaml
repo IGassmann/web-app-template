@@ -6,9 +6,9 @@ on:
       - main
 
 jobs:
-  acceptance:
+  acceptance-stage:
     name: Acceptance Stage
-    uses: ./.github/workflows/acceptance.yaml
+    uses: ./.github/workflows/acceptance-stage.yaml
     with:
       environment: production
     secrets:
@@ -19,7 +19,7 @@ jobs:
   deploy:
     name: Deploy to Production
     needs:
-      - acceptance
+      - acceptance-stage
     timeout-minutes: 5
     runs-on: ubuntu-latest
     outputs:

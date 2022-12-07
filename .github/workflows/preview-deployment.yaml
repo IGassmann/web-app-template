@@ -6,8 +6,9 @@ on:
       - main
 
 jobs:
-  acceptance:
-    uses: ./.github/workflows/acceptance.yaml
+  acceptance-stage:
+    name: Acceptance Stage
+    uses: ./.github/workflows/acceptance-stage.yaml
     with:
       environment: preview
     secrets:
@@ -18,7 +19,7 @@ jobs:
   deploy:
     name: Deploy to Preview
     needs:
-      - acceptance
+      - acceptance-stage
     timeout-minutes: 5
     runs-on: ubuntu-latest
     outputs:
