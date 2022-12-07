@@ -25,7 +25,6 @@ specifiers:
   clsx: 1.2.1
   commitizen: 4.2.5
   cross-env: 7.0.3
-  dayjs: 1.11.6
   eslint: 8.29.0
   eslint-config-airbnb: 19.0.4
   eslint-config-airbnb-typescript: 17.0.0
@@ -65,7 +64,6 @@ dependencies:
   '@segment/analytics-next': 1.46.1
   '@sentry/nextjs': 7.20.1_next@13.0.4+react@18.2.0
   clsx: 1.2.1
-  dayjs: 1.11.6
   focus-visible: 5.2.0
   next: 13.0.4_mqvh5p7ejg4taogoj6tpk3gd5a
   react: 18.2.0
@@ -5837,13 +5835,6 @@ packages:
       whatwg-mimetype: 3.0.0
       whatwg-url: 11.0.0
     dev: true
-
-  /dayjs/1.11.6:
-    resolution:
-      {
-        integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==,
-      }
-    dev: false
 
   /debug/2.6.9:
     resolution:
