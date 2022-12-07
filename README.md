@@ -97,8 +97,7 @@ $ pnpm lint
 Staged files are automatically linted before commits. Be sure to **fix all linting errors before
 committing**.
 
-We recommend using an [editor integration](https://eslint.org/docs/user-guide/integrations) for
-ESLint.
+We recommend using an [editor integration for ESLint](https://eslint.org/docs/user-guide/integrations).
 
 ### Code Formatting
 
@@ -111,7 +110,7 @@ $ pnpm format
 
 Staged files are automatically formatted when committing.
 
-We recommend using an [editor integration](https://prettier.io/docs/en/editors.html) for Prettier.
+We recommend using an [editor integration for Prettier](https://prettier.io/docs/en/editors.html).
 
 ### Environment Variables
 
