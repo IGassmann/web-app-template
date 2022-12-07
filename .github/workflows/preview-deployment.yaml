@@ -6,19 +6,19 @@ on:
       - main
 
 jobs:
-  lint-test-build:
-    name: Lint, Test, and Build
-    uses: IGassmann/web-app-template/.github/workflows/development.yaml@main
+  acceptance:
+    uses: ./.github/workflows/acceptance.yaml
     with:
       environment: preview
     secrets:
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      vercel-organization-id: ${{ secrets.VERCEL_ORG_ID }}
+      vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+      vercel-token: ${{ secrets.VERCEL_TOKEN }}
 
   deploy:
     name: Deploy to Preview
     needs:
-      - lint-test-build
+      - acceptance
     timeout-minutes: 5
     runs-on: ubuntu-latest
     outputs:
@@ -26,9 +26,6 @@ jobs:
     environment:
       name: preview
       url: ${{ steps.deploy.outputs.url }}
-    env:
-      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     steps:
       - name: Check out code
         uses: actions/checkout@v3
@@ -53,4 +50,7 @@ jobs:
 
       - name: Deploy build artifacts to Vercel
         id: deploy
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
         run: echo "url=$(pnpm vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})" >> $GITHUB_OUTPUT

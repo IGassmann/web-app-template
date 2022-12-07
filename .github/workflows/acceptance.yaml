@@ -1,4 +1,4 @@
-name: Development
+name: Acceptance Stage
 
 on:
   pull_request:
