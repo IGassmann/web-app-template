@@ -10,10 +10,9 @@
 
 ## Context
 
-<!--- Include any relevant details, such as relevant issues  -->
-<!--- or links to related pull requests or code. This will  -->
-<!--- provide context for your changes and make it easier  -->
-<!--- for others to understand your code. -->
+<!--- Include any relevant details, such as relevant issues or links to related pull requests or
+code. This will provide context for your changes and make it easier for others to understand
+your code. -->
 
 ## How Has This Been Tested?
 
