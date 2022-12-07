@@ -6,8 +6,8 @@ on:
       - main
 
 jobs:
-  lint-test-build:
-    name: Lint, Test, and Build
+  acceptance:
+    name: Acceptance Stage
     uses: ./.github/workflows/development.yaml
     with:
       environment: production
@@ -19,7 +19,7 @@ jobs:
   deploy:
     name: Deploy to Production
     needs:
-      - lint-test-build
+      - acceptance
     timeout-minutes: 5
     runs-on: ubuntu-latest
     outputs:
