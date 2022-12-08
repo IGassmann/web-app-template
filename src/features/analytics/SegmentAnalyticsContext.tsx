@@ -1,6 +1,7 @@
+import useSegmentAnalyticsPageTracking from '@/features/analytics/useSegmentAnalyticsPageTracking';
 import { AnalyticsBrowser } from '@segment/analytics-next';
 import type React from 'react';
-import { createContext, useContext, useMemo } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const SegmentAnalyticsContext = createContext<AnalyticsBrowser | undefined>(undefined);
 
@@ -13,7 +14,10 @@ const SegmentAnalyticsProvider: React.FC<AnalyticsProviderProperties> = ({
   children,
   writeKey,
 }) => {
-  const analytics = useMemo(() => AnalyticsBrowser.load({ writeKey }), [writeKey]);
+  const [analytics] = useState(() => AnalyticsBrowser.load({ writeKey }));
+
+  useSegmentAnalyticsPageTracking(analytics);
+
   return (
     <SegmentAnalyticsContext.Provider value={analytics}>
       {children}
