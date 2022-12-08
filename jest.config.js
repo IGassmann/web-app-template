@@ -15,6 +15,8 @@ const customJestConfig = {
     '^@/(.*)$': '<rootDir>/src/$1',
     // Handle test-utils file import
     '^test-utils$': '<rootDir>/test/test-utils',
+    // Handle SVG file imports
+    '^.+\\.(svg)$': '<rootDir>/test/mocks/svgFileMock.tsx',
   },
   testEnvironment: 'jsdom',
 };
