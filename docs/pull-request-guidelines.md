@@ -100,6 +100,29 @@ outcome should be tracked for future reference.
 The PR is the right communication channel for all simple matters, as it allows the whole team to
 follow along, and enables to look-up decisions and understand code development after the fact.
 
+### Don't Add to the PR Yourself
+
+It's sometimes tempting to fix a bug in a PR yourself, to rework a section to meet coding
+standards, or to merge the PR yourself.
+
+If you do this without communicating beforehand with the author, you might interfere with his work
+and steal the opportunity to explain what he did. For code changes, use instead
+[GitHub suggestions](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)
+to propose code changes that the author can easily commit.
+
+If the original PR is “good enough,” approve the PR and leave comments about the changes
+you'd like to see. If the author doesn't have time to make the changes, you can make them yourself
+in a new PR.
+
+Regarding the merge, the author is always the best person to know when the PR is ready to be merged,
+especially when there are dependencies like other PRs that need to be merged first, configuration
+changes, or other things that need to be done before the PR can be merged. You also want the PR
+author to be available immediately if something goes wrong after the merge.
+
+Alternatively, you can ask the author to collaborate in his PR so that you can push changes to his
+branch. This is a good option if the author is unavailable, but you still want to make changes to
+the PR. Just make sure to communicate with the author beforehand.
+
 ## References
 
 - [Google - Engineering Practices Documentation](https://google.github.io/eng-practices/)
