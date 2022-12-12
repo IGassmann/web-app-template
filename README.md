@@ -23,8 +23,6 @@ Before being able to run the app for the first time, you need to follow the step
    `corepack enable; corepack prepare`
 3. Install dependencies by running `pnpm install`
 4. Link local repository to its Vercel project by running `pnpm vercel link`
-   - You will be prompted to provide a scope and an existing project. The scope is "Learn Arena" and
-     the project is "learn-arena".
 5. Download environment variables by running `pnpm env:pull`
 
 ## Developing
