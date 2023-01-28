@@ -1,12 +1,13 @@
 import util from 'node:util';
 import { Analytics } from '@segment/analytics-node';
+import { captureException } from '@sentry/nextjs';
 import type { Asyncify } from 'type-fest';
 
 export default function serverAnalytics() {
   const analytics = new Analytics({
     maxEventsInBatch: 1,
     writeKey: process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY,
-  }).on('error', console.error);
+  }).on('error', captureException);
 
   const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
   type AnalyticsCallName = typeof analyticsCallNames[number];
