@@ -1,5 +1,9 @@
 declare global {
-  interface UserPublicMetadata {}
+  interface UserPublicMetadata {
+    [key: string]: unknown;
+  }
 
-  interface UserUnsafeMetadata {}
+  interface UserUnsafeMetadata {
+    [key: string]: unknown;
+  }
 }
