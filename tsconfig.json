@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "importsNotUsedAsValues": "error",
+    "noUncheckedIndexedAccess": true,
     "jsx": "preserve",
     "incremental": true,
     "baseUrl": "./",
