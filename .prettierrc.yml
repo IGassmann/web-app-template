@@ -9,7 +9,9 @@ importOrder:
   - '^@/types/(.*)$'
   - '^@/features/common/(.*)$'
   - '^@/features/(.*)$'
+  - '^@/server/(.*)$'
   - '^@/styles/(.*)$'
+  - '^@/(.*)$'
   - '^[./]'
 importOrderSortSpecifiers: true
 importOrderBuiltinModulesToTop: true

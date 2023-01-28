@@ -21,6 +21,7 @@ export default function useAnalyticsIdentify(analytics: AnalyticsBrowser): void 
       username: user.username,
       avatar: user.profileImageUrl,
       createdAt: user.createdAt,
+      isAdmin: user.publicMetadata?.isAdmin,
     });
 
     const handleRouteChange = (): void => {
@@ -30,6 +31,7 @@ export default function useAnalyticsIdentify(analytics: AnalyticsBrowser): void 
         username: user.username,
         avatar: user.profileImageUrl,
         createdAt: user.createdAt,
+        isAdmin: user.publicMetadata?.isAdmin,
       });
     };
 
@@ -45,5 +47,6 @@ export default function useAnalyticsIdentify(analytics: AnalyticsBrowser): void 
     user?.username,
     user?.profileImageUrl,
     user?.createdAt,
+    user?.publicMetadata?.isAdmin,
   ]);
 }
