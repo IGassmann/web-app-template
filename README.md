@@ -110,6 +110,12 @@ Staged files are automatically formatted when committing.
 
 We recommend using an [editor integration for Prettier](https://prettier.io/docs/en/editors.html).
 
+### Analytics
+
+To measure the value and impact of a feature, it's essential to properly add analytics events to it
+before releasing it. Be sure to read through the [Data Tracking Plan](./docs/data-tracking-plan.md)
+to learn how we track analytics data.
+
 ### Environment Variables
 
 Environment variables are handled by the [Vercel CLI](https://vercel.com/docs/cli/env). Use the
@@ -221,6 +227,10 @@ We use Architectural Decision Records (ADRs) for documenting architectural signi
 To learn more about ADRs and browse them, check out [our architectural decision log](https://adr.web-app-template.igassmann.me/).
 
 To learn how to write a new ADR, check out [docs/architectural-decisions/README.md](./docs/architectural-decisions/README.md).
+
+### Data Tracking Plan
+
+We use a [Data Tracking Plan](./docs/data-tracking-plan.md) to document how we track data analytics.
 
 ### REST API Guidelines
 
