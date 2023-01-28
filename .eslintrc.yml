@@ -1,4 +1,6 @@
 root: true
+plugins:
+  - tsdoc
 extends:
   - airbnb
   - airbnb/hooks
@@ -25,6 +27,7 @@ rules:
     - error
     - allowList:
         props: true
+  tsdoc/syntax: error
 overrides:
   - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
     extends:
