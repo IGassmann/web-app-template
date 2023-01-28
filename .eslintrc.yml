@@ -19,6 +19,7 @@ rules:
       explicitSpread: ignore
       exceptions:
         - Component
+        - ClerkProvider
   unicorn/filename-case: off
   unicorn/prevent-abbreviations:
     - error

@@ -12,5 +12,9 @@
       "outputs": []
     }
   },
-  "globalEnv": ["NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY"]
+  "globalEnv": [
+    "NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+    "CLERK_SECRET_KEY"
+  ]
 }

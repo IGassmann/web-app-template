@@ -1,4 +1,5 @@
 import { SegmentAnalyticsProvider } from '@/features/analytics/SegmentAnalyticsContext';
+import { ClerkProvider } from '@clerk/nextjs';
 import { render, type RenderOptions } from '@testing-library/react';
 import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider';
 
@@ -10,9 +11,11 @@ type AllTheProvidersProperties = {
 
 const AllTheProviders: React.FC<AllTheProvidersProperties> = ({ children }) => (
   <MemoryRouterProvider>
-    <SegmentAnalyticsProvider writeKey={process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY}>
-      {children}
-    </SegmentAnalyticsProvider>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+      <SegmentAnalyticsProvider writeKey={process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY}>
+        {children}
+      </SegmentAnalyticsProvider>
+    </ClerkProvider>
   </MemoryRouterProvider>
 );
 

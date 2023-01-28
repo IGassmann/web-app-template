@@ -30,7 +30,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@clerk/nextjs": "4.6.0",
+    "@clerk/nextjs": "4.8.0",
     "@headlessui/react": "1.7.7",
     "@heroicons/react": "2.0.13",
     "@next/font": "13.0.4",
