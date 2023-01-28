@@ -1,7 +1,7 @@
 const path = require('path');
 
 const ESLintTask = (fileNames) =>
-  `next lint --fix --file ${fileNames
+  `next lint --format pretty --fix --file ${fileNames
     .map((f) => path.relative(process.cwd(), f))
     .join(' --file ')}`;
 
