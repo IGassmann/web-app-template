@@ -1,9 +1,9 @@
 import type React from 'react';
-
-import { AnalyticsProvider } from '@/features/analytics/AnalyticsContext';
 import { ClerkProvider } from '@clerk/nextjs';
 import { render, type RenderOptions } from '@testing-library/react';
 import { MemoryRouterProvider } from 'next-router-mock/MemoryRouterProvider';
+
+import { AnalyticsProvider } from '@/features/analytics/AnalyticsContext';
 
 type AllTheProvidersProperties = {
   children: React.ReactNode;

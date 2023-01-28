@@ -1,5 +1,5 @@
-import { SignUp } from '@clerk/nextjs';
 import type { NextPage } from 'next';
+import { SignUp } from '@clerk/nextjs';
 
 const SignUpPage: NextPage = () => (
   <div className="flex min-h-full justify-center py-12 sm:py-40">

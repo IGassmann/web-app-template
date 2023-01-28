@@ -1,6 +1,7 @@
-import { AnalyticsBrowser } from '@segment/analytics-next';
 import type React from 'react';
 import { createContext, useContext, useState } from 'react';
+import { AnalyticsBrowser } from '@segment/analytics-next';
+
 import useAnalyticsIdentify from './useAnalyticsIdentify';
 import useAnalyticsPageTracking from './useAnalyticsPageTracking';
 

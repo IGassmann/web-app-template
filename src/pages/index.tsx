@@ -1,5 +1,5 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs';
 import type { NextPage } from 'next';
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
 const HomePage: NextPage = () => (
   <div className="isolate bg-white">

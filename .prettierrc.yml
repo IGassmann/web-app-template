@@ -1,4 +1,20 @@
 singleQuote: true
 printWidth: 100
+importOrder:
+  - '^(react/(.*)$)|^(react$)'
+  - '^(next/(.*)$)|^(next$)'
+  - '<THIRD_PARTY_MODULES>'
+  - ''
+  - '^types$'
+  - '^@/types/(.*)$'
+  - '^@/features/common/(.*)$'
+  - '^@/features/(.*)$'
+  - '^@/styles/(.*)$'
+  - '^[./]'
+importOrderSortSpecifiers: true
+importOrderBuiltinModulesToTop: true
+importOrderMergeDuplicateImports: true
+importOrderCombineTypeAndValueImports: true
 plugins:
-  - prettier-plugin-tailwindcss
+  - 'prettier-plugin-tailwindcss'
+  - '@ianvs/prettier-plugin-sort-imports'

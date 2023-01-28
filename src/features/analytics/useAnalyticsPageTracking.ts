@@ -1,6 +1,6 @@
-import type { AnalyticsBrowser } from '@segment/analytics-next';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import type { AnalyticsBrowser } from '@segment/analytics-next';
 
 /**
  * This hook automatically tracks page views for analytics. It tracks the page view when the app is

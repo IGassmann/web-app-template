@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document';
 import type { DocumentType } from 'next/dist/shared/lib/utils';
+import { Head, Html, Main, NextScript } from 'next/document';
 
 const MyDocument: DocumentType = () => (
   <Html className="h-full bg-white antialiased" lang="en">

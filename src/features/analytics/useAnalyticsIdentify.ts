@@ -1,7 +1,7 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { useUser } from '@clerk/nextjs';
 import type { AnalyticsBrowser } from '@segment/analytics-next';
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
 
 /**
  * This hook automatically identifies the user for analytics when the user is signed in.
