@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
 /**
- * This hook will automatically track page views using Segment Analytics.
- * It will track the page view when the app is mounted and when the route changes.
+ * This hook automatically tracks page views for analytics. It tracks the page view when the app is
+ * mounted and when the route changes.
  *
- * @param analytics - The Segment Analytics instance.
+ * @param analytics - The Segment Analytics browser instance.
  */
-export default function useSegmentAnalyticsPageTracking(analytics: AnalyticsBrowser): void {
+export default function useAnalyticsPageTracking(analytics: AnalyticsBrowser): void {
   const router = useRouter();
 
   useEffect(() => {

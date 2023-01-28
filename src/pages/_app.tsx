@@ -1,4 +1,4 @@
-import { SegmentAnalyticsProvider } from '@/features/analytics/SegmentAnalyticsContext';
+import { AnalyticsProvider } from '@/features/analytics/AnalyticsContext';
 import '@/styles/tailwind.css';
 import { ClerkProvider } from '@clerk/nextjs';
 import { Inter } from '@next/font/google';
@@ -18,9 +18,9 @@ const MyApp: AppType = ({ Component, pageProps }) => (
     </Head>
     <div className={`${interFont.variable} font-sans`}>
       <ClerkProvider {...pageProps}>
-        <SegmentAnalyticsProvider writeKey={process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY}>
+        <AnalyticsProvider segmentWriteKey={process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY}>
           <Component {...pageProps} />
-        </SegmentAnalyticsProvider>
+        </AnalyticsProvider>
       </ClerkProvider>
     </div>
   </>
