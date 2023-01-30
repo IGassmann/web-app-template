@@ -20,11 +20,9 @@ const CustomErrorComponent: NextPage<ErrorProps> = ({ statusCode }) => (
 );
 
 CustomErrorComponent.getInitialProps = async (contextData) => {
-  // In case this is running in a serverless function, this awaits in order to give Sentry
-  // time to send the error before the serverless function exits.
+  // Await in order to give Sentry time to send the error before the serverless function exits.
   await Sentry.captureUnderscoreErrorException(contextData);
 
-  // This will contain the status code of the response
   return NextErrorComponent.getInitialProps(contextData);
 };
 

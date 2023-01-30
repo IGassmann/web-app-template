@@ -19,6 +19,8 @@ const nextConfig = {
     // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/#use-hidden-source-map
     // for more information.
     hideSourceMaps: true,
+    // Tunnel sentry events to help circumvent ad-blockers.
+    tunnelRoute: '/api/sentry',
   },
   webpack(config) {
     config.module.rules.push({
