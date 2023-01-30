@@ -34,5 +34,3 @@ export default function serverAnalytics() {
     alias: promisifiedAnalyticsCalls.alias as Asyncify<Analytics['alias']>,
   };
 }
-
-const analytics = serverAnalytics();

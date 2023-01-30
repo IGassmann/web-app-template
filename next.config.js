@@ -39,7 +39,7 @@ const nextConfig = {
  *   urlPrefix, include, ignore
  *
  * For all available options, see:
- * https://github.com/getsentry/sentry-webpack-plugin#options.*
+ * https://github.com/getsentry/sentry-webpack-plugin#options
  */
 const sentryWebpackPluginOptions = {
   silent: true,
