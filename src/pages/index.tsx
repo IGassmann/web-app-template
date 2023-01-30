@@ -1,10 +1,6 @@
 import type { NextPage } from 'next';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 
-function triggerError() {
-  throw new Error('This is an error');
-}
-
 const HomePage: NextPage = () => (
   <div className="isolate bg-white">
     <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -45,11 +41,6 @@ const HomePage: NextPage = () => (
           </span>
         </SignedOut>
       </nav>
-    </div>
-    <div className="px-6 pt-6 lg:px-8">
-      <button type="button" onClick={triggerError}>
-        Trigger error
-      </button>
     </div>
     <main>
       <div className="relative px-6 lg:px-8">
