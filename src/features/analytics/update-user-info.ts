@@ -5,7 +5,7 @@ export default inngest.createFunction(
   'Update user info',
   'clerk/user.updated',
   async ({ event }) => {
-    const analytics = serverAnalytics();
+    const analytics = await serverAnalytics();
     const updatedUser = event.data;
 
     const userPrimaryEmailAddress = updatedUser.email_addresses.find(

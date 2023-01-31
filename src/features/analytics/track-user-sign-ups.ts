@@ -5,7 +5,7 @@ export default inngest.createFunction(
   'Track user sign ups',
   'clerk/user.created',
   async ({ event }) => {
-    const analytics = serverAnalytics();
+    const analytics = await serverAnalytics();
 
     const createdUser = event.data;
 

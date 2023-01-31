@@ -14,13 +14,28 @@ const trpc = initTRPC.context<Context>().create({
 export const createTRPCRouter = trpc.router;
 
 /**
+ * Middleware that identifies the user in analytics.
+ *
+ * @see {@link https://trpc.io/docs/middlewares}
+ */
+const identifyUser = trpc.middleware(({ ctx, next }) => {
+  const { analytics, userId } = ctx;
+
+  if (userId) {
+    analytics.identify({ userId });
+  }
+
+  return next();
+});
+
+/**
  * Public (unauthenticated) procedure
  *
  * This is the base piece used to build new queries and mutations on the
  * tRPC API. It does not guarantee that a user querying is authorized, but you
  * can still access the userId if they are signed in
  */
-export const publicProcedure = trpc.procedure;
+export const publicProcedure = trpc.procedure.use(identifyUser);
 
 /**
  * Middleware that enforces users are signed in before running the procedure.
@@ -46,7 +61,7 @@ const isAuthenticated = trpc.middleware(({ ctx, next }) => {
  *
  * @see {@link https://trpc.io/docs/procedures}
  */
-export const protectedProcedure = trpc.procedure.use(isAuthenticated);
+export const protectedProcedure = trpc.procedure.use(identifyUser).use(isAuthenticated);
 
 /**
  * Middleware that enforces users are admin before running the procedure.

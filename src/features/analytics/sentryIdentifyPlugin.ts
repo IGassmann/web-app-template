@@ -1,0 +1,37 @@
+import type { Context as BrowserContext, Plugin as BrowserPlugin } from '@segment/analytics-next';
+import type { Plugin as ServerPlugin } from '@segment/analytics-node';
+import * as Sentry from '@sentry/nextjs';
+
+type NonNullValues<T> = {
+  [K in keyof T]: T[K] extends null ? never : T[K];
+};
+
+function mapObjectNullValuesToUndefined<T extends Record<string, unknown>>(
+  object: T
+): NonNullValues<Record<string, unknown>> {
+  return Object.fromEntries(
+    Object.entries(object).map(([key, value]) => [key, value ?? undefined])
+  );
+}
+
+const sentryIdentifyPlugin: BrowserPlugin | ServerPlugin = {
+  name: 'Sentry User Identification',
+  type: 'destination',
+  version: '1.0.0',
+
+  isLoaded: () => Sentry.getCurrentHub?.()?.getClient?.() !== undefined,
+  load: () => Promise.resolve(),
+
+  identify: (context: BrowserContext) => {
+    const normalizedTraits = context.event.traits
+      ? mapObjectNullValuesToUndefined(context.event.traits)
+      : undefined;
+    Sentry.setUser({
+      id: context.event.userId ?? context.event.anonymousId ?? undefined,
+      ...normalizedTraits,
+    });
+    return context;
+  },
+};
+
+export default sentryIdentifyPlugin;

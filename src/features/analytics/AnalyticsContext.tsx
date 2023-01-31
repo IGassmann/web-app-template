@@ -1,7 +1,8 @@
 import type React from 'react';
 import { createContext, useContext, useState } from 'react';
-import { AnalyticsBrowser } from '@segment/analytics-next';
+import { AnalyticsBrowser, Plugin } from '@segment/analytics-next';
 
+import sentryIdentifyPlugin from './sentryIdentifyPlugin';
 import useAnalyticsIdentify from './useAnalyticsIdentify';
 import useAnalyticsPageTracking from './useAnalyticsPageTracking';
 
@@ -16,7 +17,9 @@ const AnalyticsProvider: React.FC<AnalyticsProviderProperties> = ({
   children,
   segmentWriteKey,
 }) => {
-  const [analytics] = useState(() => AnalyticsBrowser.load({ writeKey: segmentWriteKey }));
+  const [analytics] = useState(() =>
+    AnalyticsBrowser.load({ writeKey: segmentWriteKey, plugins: [sentryIdentifyPlugin as Plugin] })
+  );
 
   useAnalyticsPageTracking(analytics);
   useAnalyticsIdentify(analytics);

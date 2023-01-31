@@ -117,7 +117,7 @@ happened in a different request.
 ```typescript
 export default async function handler() {
   // ...
-  const analytics = serverAnalytics();
+  const analytics = await serverAnalytics();
 
   await analytics.track({
     userId: userId,
@@ -202,11 +202,11 @@ It is the core monetization event. It helps track revenue.
 
 ##### Properties
 
-| Property | Type   | Description                                                                                  |
-| -------- | ------ | -------------------------------------------------------------------------------------------- |
-| revenue  | Number | Revenue ($) associated with the transaction (excluding tax). This should be a decimal value. |
-| currency | String | Currency of the revenue an event resulted in. This should be in the ISO 4127 format.         |
-| chargeId | String | The Stripe charge id.                                                                        |
+| Property        | Type   | Description                                                                                  |
+| --------------- | ------ | -------------------------------------------------------------------------------------------- |
+| revenue         | Number | Revenue ($) associated with the transaction (excluding tax). This should be a decimal value. |
+| currency        | String | Currency of the revenue. This should be in the ISO 4127 format.                              |
+| paymentIntentId | String | The Stripe payment intent associated with the transaction.                                   |
 
 ##### Location
 
@@ -221,7 +221,7 @@ Server-side when the Stripe event is received.
   "properties": {
     "revenue": "18.99",
     "currency": "USD",
-    "chargeId": "ch_3MRBkY2eZvKYlo2C1H0Ktg7P"
+    "paymentIntentId": "pi_3MRBkY2eZvKYlo2C1H0Ktg7P"
   }
 }
 ```

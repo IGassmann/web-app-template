@@ -1,13 +1,17 @@
 import util from 'node:util';
-import { Analytics } from '@segment/analytics-node';
+import { Analytics, Plugin } from '@segment/analytics-node';
 import { captureException } from '@sentry/nextjs';
 import type { Asyncify } from 'type-fest';
 
-export default function serverAnalytics() {
+import sentryIdentifyPlugin from '@/features/analytics/sentryIdentifyPlugin';
+
+export default async function serverAnalytics() {
   const analytics = new Analytics({
     maxEventsInBatch: 1,
     writeKey: process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY,
   }).on('error', captureException);
+
+  await analytics.register(sentryIdentifyPlugin as Plugin);
 
   const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
   type AnalyticsCallName = typeof analyticsCallNames[number];
