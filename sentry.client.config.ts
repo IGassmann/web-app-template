@@ -22,4 +22,11 @@ Sentry.init({
   // that it will also get attached to your source maps
 });
 
-Sentry.getCurrentHub?.()?.getClient?.()?.addIntegration?.(new Sentry.Replay());
+Sentry.getCurrentHub?.()
+  ?.getClient?.()
+  ?.addIntegration?.(
+    new Sentry.Replay({
+      maskAllText: false,
+      blockAllMedia: false,
+    })
+  );
