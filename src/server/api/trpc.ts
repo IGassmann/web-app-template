@@ -18,11 +18,11 @@ export const createTRPCRouter = trpc.router;
  *
  * @see {@link https://trpc.io/docs/middlewares}
  */
-const identifyUser = trpc.middleware(({ ctx, next }) => {
+const identifyUser = trpc.middleware(async ({ ctx, next }) => {
   const { analytics, userId } = ctx;
 
   if (userId) {
-    analytics.identify({ userId });
+    await analytics.identify({ userId });
   }
 
   return next();
