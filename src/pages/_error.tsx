@@ -23,6 +23,8 @@ CustomErrorComponent.getInitialProps = async (contextData) => {
   // Await in order to give Sentry time to send the error before the serverless function exits.
   await Sentry.captureUnderscoreErrorException(contextData);
 
+  Sentry.showReportDialog();
+
   return NextErrorComponent.getInitialProps(contextData);
 };
 
