@@ -1,16 +1,13 @@
 // @ts-check
-
-// This file sets a custom webpack configuration to use your Next.js app
-// with Sentry.
-// https://nextjs.org/docs/api-reference/next.config.js/introduction
-// https://docs.sentry.io/platforms/javascript/guides/nextjs/
-
 const { withSentryConfig } = require('@sentry/nextjs');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
+
+  // Optional build-time configuration for Sentry.
+  // See https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/#extend-nextjs-configuration
   sentry: {
     // Use `hidden-source-map` rather than `source-map` as the Webpack `devtool`
     // for client-side builds. (This will be the default starting in
@@ -29,11 +26,8 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
-    /**
-     * Tree-shake optional Sentry debug code in production builds.
-     *
-     * @see {@link https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/tree-shaking/#tree-shaking-optional-code}
-     */
+    // Tree-shake optional Sentry debug code in production builds.
+    // See https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/tree-shaking/#tree-shaking-optional-code
     config.plugins.push(
       new webpack.DefinePlugin({
         __SENTRY_DEBUG__: dev,
