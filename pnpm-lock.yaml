@@ -43,7 +43,7 @@ specifiers:
   eslint-config-turbo: 0.0.7
   eslint-formatter-pretty: 4.1.0
   eslint-plugin-eslint-comments: 3.2.0
-  eslint-plugin-jest: 27.1.6
+  eslint-plugin-jest: 27.2.1
   eslint-plugin-jest-dom: 4.0.3
   eslint-plugin-testing-library: 5.9.1
   eslint-plugin-tsdoc: 0.2.17
@@ -132,7 +132,7 @@ devDependencies:
   eslint-config-turbo: 0.0.7_eslint@8.29.0
   eslint-formatter-pretty: 4.1.0
   eslint-plugin-eslint-comments: 3.2.0_eslint@8.29.0
-  eslint-plugin-jest: 27.1.6_pujyy7kz2dvyuh4v7whoswelxe
+  eslint-plugin-jest: 27.2.1_pujyy7kz2dvyuh4v7whoswelxe
   eslint-plugin-jest-dom: 4.0.3_eslint@8.29.0
   eslint-plugin-testing-library: 5.9.1_6rep66rojmwsn4bfraotajskeu
   eslint-plugin-tsdoc: 0.2.17
@@ -8850,10 +8850,10 @@ packages:
       requireindex: 1.2.0
     dev: true
 
-  /eslint-plugin-jest/27.1.6_pujyy7kz2dvyuh4v7whoswelxe:
+  /eslint-plugin-jest/27.2.1_pujyy7kz2dvyuh4v7whoswelxe:
     resolution:
       {
-        integrity: sha512-XA7RFLSrlQF9IGtAmhddkUkBuICCTuryfOTfCSWcZHiHb69OilIH05oozH2XA6CEOtztnOd0vgXyvxZodkxGjg==,
+        integrity: sha512-l067Uxx7ZT8cO9NJuf+eJHvt6bqJyz2Z29wykyEdz/OtmcELQl2MQGQLX8J94O1cSJWAwUSEvCjwjA7KEK3Hmg==,
       }
     engines: { node: ^14.15.0 || ^16.10.0 || >=18.0.0 }
     peerDependencies:
