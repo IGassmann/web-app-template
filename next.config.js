@@ -29,7 +29,11 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
-    // Tree-shake optional Sentry debug code in production builds
+    /**
+     * Tree-shake optional Sentry debug code in production builds.
+     *
+     * @see {@link https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/tree-shaking/#tree-shaking-optional-code}
+     */
     config.plugins.push(
       new webpack.DefinePlugin({
         __SENTRY_DEBUG__: dev,
