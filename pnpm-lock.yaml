@@ -63,7 +63,7 @@ specifiers:
   prettier-plugin-tailwindcss: 0.1.13
   react: 18.2.0
   react-dom: 18.2.0
-  react-hook-form: 7.39.4
+  react-hook-form: 7.43.0
   react-hot-toast: 2.4.0
   react-query: 3.39.2
   superjson: 1.12.2
@@ -95,7 +95,7 @@ dependencies:
   next: 13.0.4_mqvh5p7ejg4taogoj6tpk3gd5a
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-hook-form: 7.39.4_react@18.2.0
+  react-hook-form: 7.43.0_react@18.2.0
   react-hot-toast: 2.4.0_owo25xnefcwdq3zjgtohz6dbju
   react-query: 3.39.2_biqbaboplfbrettd7655fr4n2y
   superjson: 1.12.2
@@ -4888,7 +4888,7 @@ packages:
     dependencies:
       '@svgr/core': 6.5.1
       deepmerge: 4.2.2
-      prettier: 2.8.1
+      prettier: 2.8.3
     dev: true
 
   /@svgr/plugin-svgo/6.5.1_@svgr+core@6.5.1:
@@ -13200,6 +13200,15 @@ packages:
     hasBin: true
     dev: true
 
+  /prettier/2.8.3:
+    resolution:
+      {
+        integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==,
+      }
+    engines: { node: '>=10.13.0' }
+    hasBin: true
+    dev: true
+
   /pretty-bytes/5.6.0:
     resolution:
       {
@@ -13406,10 +13415,10 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-hook-form/7.39.4_react@18.2.0:
+  /react-hook-form/7.43.0_react@18.2.0:
     resolution:
       {
-        integrity: sha512-B0e78r9kR9L2M4A4AXGbHoA/vyv34sB/n8QWJAw33TFz8f5t9helBbYAeqnbvcQf1EYzJxKX/bGQQh9K+evCyQ==,
+        integrity: sha512-/rVEz7T0gLdSFwPqutJ1kn2e0sQNyb9ci/hmwEYr2YG0KF/LSuRLvNrf9QWJM+gj88CjDpDW5Bh/1AD7B2+z9Q==,
       }
     engines: { node: '>=12.22.0' }
     peerDependencies:
