@@ -22,12 +22,19 @@ const nextConfig = {
     // Tunnel sentry events to help circumvent ad-blockers.
     tunnelRoute: '/api/sentry',
   },
-  webpack(config) {
+  webpack(config, { webpack, dev }) {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
     });
+
+    // Tree-shake optional Sentry debug code in production builds
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        __SENTRY_DEBUG__: dev,
+      })
+    );
 
     return config;
   },
