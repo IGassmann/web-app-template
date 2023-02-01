@@ -1,5 +1,6 @@
-import Home from '@/pages';
 import { render, screen } from 'test-utils';
+
+import Home from '@/pages';
 
 describe('Home', () => {
   it('renders a heading', () => {

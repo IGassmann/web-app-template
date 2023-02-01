@@ -19,5 +19,4 @@ importOrderMergeDuplicateImports: true
 importOrderCombineTypeAndValueImports: true
 plugins:
   - 'prettier-plugin-tailwindcss'
-  - '@svgr/plugin-prettier'
   - '@ianvs/prettier-plugin-sort-imports'

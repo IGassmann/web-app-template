@@ -15,7 +15,6 @@ specifiers:
   '@segment/analytics-next': 1.46.1
   '@segment/analytics-node': 0.0.1-beta.16
   '@sentry/nextjs': 7.34.0
-  '@svgr/plugin-prettier': 6.5.1
   '@svgr/webpack': 6.5.1
   '@tailwindcss/forms': 0.5.3
   '@tailwindcss/typography': 0.5.8
@@ -110,7 +109,6 @@ devDependencies:
   '@commitlint/types': 17.0.0
   '@headlessui/tailwindcss': 0.1.1_tailwindcss@3.2.4
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.3
-  '@svgr/plugin-prettier': 6.5.1_@svgr+core@6.5.1
   '@svgr/webpack': 6.5.1
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
@@ -4875,20 +4873,6 @@ packages:
       svg-parser: 2.0.4
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@svgr/plugin-prettier/6.5.1_@svgr+core@6.5.1:
-    resolution:
-      {
-        integrity: sha512-nJTtamrxQjsHcP9vb5PVBiaVW9kEtAt0hzGK8e4+zbaIUHq6RPeR8+SvYaAbIIn1TExFszFuZSz1U08UX7kz7w==,
-      }
-    engines: { node: '>=10' }
-    peerDependencies:
-      '@svgr/core': '*'
-    dependencies:
-      '@svgr/core': 6.5.1
-      deepmerge: 4.2.2
-      prettier: 2.8.3
     dev: true
 
   /@svgr/plugin-svgo/6.5.1_@svgr+core@6.5.1:

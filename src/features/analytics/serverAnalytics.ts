@@ -14,8 +14,8 @@ export default async function serverAnalytics() {
   await analytics.register(sentryIdentifyPlugin as Plugin);
 
   const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
-  type AnalyticsCallName = typeof analyticsCallNames[number];
-  type AnalyticsCallFunction = typeof analytics[AnalyticsCallName];
+  type AnalyticsCallName = (typeof analyticsCallNames)[number];
+  type AnalyticsCallFunction = (typeof analytics)[AnalyticsCallName];
   type PromisifiedAnalyticsCallFunction = Asyncify<AnalyticsCallFunction>;
 
   // eslint-disable-next-line unicorn/no-array-reduce -- This is the simplest way I can think of to do this.
