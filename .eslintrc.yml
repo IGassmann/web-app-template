@@ -29,6 +29,7 @@ rules:
     - error
     - allowList:
         props: true
+  eslint-comments/require-description: error
   tsdoc/syntax: error
 overrides:
   - files: './{src,test}/**/?(*.)+test.{tsx,ts}'

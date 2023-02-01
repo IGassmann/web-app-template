@@ -11,8 +11,8 @@ type Context = {
 };
 
 /**
- * Context used in the tRPC router. It is used to process every request that goes through the tRPC
- * endpoints.
+ * Creates the context used in the tRPC router. It is used to process every request that goes
+ * through the tRPC endpoints.
  *
  * @see {@link https://trpc.io/docs/context}
  */
