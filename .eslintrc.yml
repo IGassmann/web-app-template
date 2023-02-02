@@ -12,6 +12,9 @@ extends:
   - prettier
 rules:
   consistent-return: off # Makes it impossible to use early returns without explicitly returning undefined
+  '@typescript-eslint/explicit-function-return-type':
+    - error
+    - allowExpressions: true
   react/function-component-definition:
     - error
     - namedComponents: arrow-function

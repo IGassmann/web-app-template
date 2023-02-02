@@ -5,18 +5,28 @@ import type { Asyncify } from 'type-fest';
 
 import sentryIdentifyPlugin from '@/features/analytics/sentryIdentifyPlugin';
 
-export default async function serverAnalytics() {
+const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
+type AnalyticsCallName = (typeof analyticsCallNames)[number];
+type PromisifiedAnalyticsCalls = {
+  identify: Asyncify<Analytics['identify']>;
+  track: Asyncify<Analytics['track']>;
+  page: Asyncify<Analytics['page']>;
+  screen: Asyncify<Analytics['screen']>;
+  group: Asyncify<Analytics['group']>;
+  alias: Asyncify<Analytics['alias']>;
+};
+
+// function promisify<T1>(fn: (arg1: T1, callback: (err?: any) => void) => void): (arg1: T1) => Promise<void>;
+
+export default async function serverAnalytics(): Promise<
+  Omit<Analytics, AnalyticsCallName> & PromisifiedAnalyticsCalls
+> {
   const analytics = new Analytics({
     maxEventsInBatch: 1,
     writeKey: process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY,
   }).on('error', captureException);
 
   await analytics.register(sentryIdentifyPlugin as Plugin);
-
-  const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
-  type AnalyticsCallName = (typeof analyticsCallNames)[number];
-  type AnalyticsCallFunction = (typeof analytics)[AnalyticsCallName];
-  type PromisifiedAnalyticsCallFunction = Asyncify<AnalyticsCallFunction>;
 
   // eslint-disable-next-line unicorn/no-array-reduce -- This is the simplest way I can think of to do this.
   const promisifiedAnalyticsCalls = analyticsCallNames.reduce((accumulator, analyticsCallName) => {
@@ -26,15 +36,7 @@ export default async function serverAnalytics() {
       ...accumulator,
       [analyticsCallName]: promisifiedAnalyticsCall,
     };
-  }, {} as Record<AnalyticsCallName, PromisifiedAnalyticsCallFunction>);
+  }, {} as PromisifiedAnalyticsCalls);
 
-  return {
-    ...analytics,
-    identify: promisifiedAnalyticsCalls.identify as Asyncify<Analytics['identify']>,
-    track: promisifiedAnalyticsCalls.track as Asyncify<Analytics['track']>,
-    page: promisifiedAnalyticsCalls.page as Asyncify<Analytics['page']>,
-    screen: promisifiedAnalyticsCalls.screen as Asyncify<Analytics['screen']>,
-    group: promisifiedAnalyticsCalls.group as Asyncify<Analytics['group']>,
-    alias: promisifiedAnalyticsCalls.alias as Asyncify<Analytics['alias']>,
-  };
+  return Object.assign(analytics, promisifiedAnalyticsCalls);
 }
