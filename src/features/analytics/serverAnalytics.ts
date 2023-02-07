@@ -16,8 +16,6 @@ type PromisifiedAnalyticsCalls = {
   alias: Asyncify<Analytics['alias']>;
 };
 
-// function promisify<T1>(fn: (arg1: T1, callback: (err?: any) => void) => void): (arg1: T1) => Promise<void>;
-
 export default async function serverAnalytics(): Promise<
   Omit<Analytics, AnalyticsCallName> & PromisifiedAnalyticsCalls
 > {
