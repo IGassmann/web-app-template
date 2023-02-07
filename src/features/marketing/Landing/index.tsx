@@ -35,7 +35,7 @@ const Landing: React.FC = () => (
               Web App Template
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
-              A simple but complete template for creating web apps.
+              A simple but opinionated template for creating web apps.
             </p>
             <div className="mt-8 flex sm:justify-center">
               <SignedOut>
