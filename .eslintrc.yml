@@ -16,14 +16,7 @@ rules:
     - error
     - namedComponents: arrow-function
       unnamedComponents: arrow-function
-  react/jsx-props-no-spreading:
-    - error
-    - html: enforce
-      custom: enforce
-      explicitSpread: ignore
-      exceptions:
-        - Component
-        - ClerkProvider
+  react/jsx-props-no-spreading: error # Prop types already protects against passing invalid or unnecessary props down to components.
   unicorn/filename-case: off
   unicorn/prevent-abbreviations:
     - error
