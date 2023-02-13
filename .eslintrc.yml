@@ -22,7 +22,7 @@ rules:
     - error
     - allowList:
         props: true
-  eslint-comments/require-description: error
+  eslint-comments/require-description: error # Prevents disabling eslint rules without providing a reason.
   tsdoc/syntax: error
 overrides:
   - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
