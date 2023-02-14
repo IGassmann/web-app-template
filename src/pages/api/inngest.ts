@@ -1,6 +1,7 @@
 import { serve } from 'inngest/next';
 
-import trackUserSignUps from '@/features/analytics/track-user-sign-ups';
-import updateUserInfo from '@/features/analytics/update-user-info';
+import inngest from '@/features/common/inngest';
+import trackUserSignUps from '@/features/analytics/trackUserSignUps';
+import updateUserInfo from '@/features/analytics/updateUserInfo';
 
-export default serve('Web App Template', [trackUserSignUps, updateUserInfo]);
+export default serve(inngest, [trackUserSignUps, updateUserInfo]);

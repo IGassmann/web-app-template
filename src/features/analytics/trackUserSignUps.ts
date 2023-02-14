@@ -1,5 +1,5 @@
+import inngest from '@/features/common/inngest';
 import serverAnalytics from '@/features/analytics/serverAnalytics';
-import inngest from '@/server/inngest';
 
 export default inngest.createFunction(
   'Track user sign ups',
