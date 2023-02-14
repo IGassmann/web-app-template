@@ -1,5 +1,5 @@
 import util from 'node:util';
-import { Analytics, Context, Plugin } from '@segment/analytics-node';
+import { Analytics, Context } from '@segment/analytics-node';
 import { captureException } from '@sentry/nextjs';
 
 import sentryIdentifyPlugin from '@/features/analytics/sentryIdentifyPlugin';
@@ -25,7 +25,7 @@ export default async function serverAnalytics(): Promise<
     writeKey: process.env.NEXT_PUBLIC_SEGMENT_ANALYTICS_WRITE_KEY,
   }).on('error', captureException);
 
-  await analytics.register(sentryIdentifyPlugin as Plugin);
+  await analytics.register(sentryIdentifyPlugin);
 
   // eslint-disable-next-line unicorn/no-array-reduce -- This is the simplest way I can think of to do this.
   const promisifiedAnalyticsCalls = analyticsCallNames.reduce((accumulator, analyticsCallName) => {
