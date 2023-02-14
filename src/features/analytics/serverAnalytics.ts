@@ -1,19 +1,20 @@
 import util from 'node:util';
-import { Analytics, Plugin } from '@segment/analytics-node';
+import { Analytics, Context, Plugin } from '@segment/analytics-node';
 import { captureException } from '@sentry/nextjs';
-import type { Asyncify } from 'type-fest';
 
 import sentryIdentifyPlugin from '@/features/analytics/sentryIdentifyPlugin';
 
 const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
 type AnalyticsCallName = (typeof analyticsCallNames)[number];
+
+type AnalyticsCall = (typeof Analytics.prototype)[AnalyticsCallName];
+
+type PromisifyAnalyticsCall<F extends AnalyticsCall> = (
+  arguments_: Parameters<F>[0]
+) => Promise<Context>;
+
 type PromisifiedAnalyticsCalls = {
-  identify: Asyncify<Analytics['identify']>;
-  track: Asyncify<Analytics['track']>;
-  page: Asyncify<Analytics['page']>;
-  screen: Asyncify<Analytics['screen']>;
-  group: Asyncify<Analytics['group']>;
-  alias: Asyncify<Analytics['alias']>;
+  [K in AnalyticsCallName]: PromisifyAnalyticsCall<Analytics[K]>;
 };
 
 export default async function serverAnalytics(): Promise<
