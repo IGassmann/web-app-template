@@ -26,6 +26,7 @@ export default inngest.createFunction(
     await analytics.track({
       userId: createdUser.id,
       event: 'User Signed Up',
+      timestamp: new Date(createdUser.created_at),
     });
   }
 );
