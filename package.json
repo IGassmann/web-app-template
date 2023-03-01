@@ -34,7 +34,7 @@
     "@clerk/nextjs": "4.10.1",
     "@headlessui/react": "1.7.8",
     "@heroicons/react": "2.0.13",
-    "@next/font": "13.0.4",
+    "@next/font": "13.2.3",
     "@segment/analytics-next": "1.46.1",
     "@segment/analytics-node": "0.0.1-beta.16",
     "@sentry/nextjs": "7.34.0",
