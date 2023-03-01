@@ -62,7 +62,7 @@
     "@commitlint/cli": "17.3.0",
     "@commitlint/config-conventional": "17.2.0",
     "@commitlint/cz-commitlint": "17.2.0",
-    "@commitlint/types": "17.0.0",
+    "@commitlint/types": "17.4.4",
     "@headlessui/tailwindcss": "0.1.1",
     "@ianvs/prettier-plugin-sort-imports": "3.7.1",
     "@svgr/webpack": "6.5.1",
