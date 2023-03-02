@@ -8,7 +8,7 @@ specifiers:
   '@commitlint/cz-commitlint': 17.4.4
   '@commitlint/types': 17.4.4
   '@headlessui/react': 1.7.8
-  '@headlessui/tailwindcss': 0.1.1
+  '@headlessui/tailwindcss': 0.1.2
   '@heroicons/react': 2.0.13
   '@ianvs/prettier-plugin-sort-imports': 3.7.1
   '@segment/analytics-next': 1.46.1
@@ -107,7 +107,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.4
   '@commitlint/cz-commitlint': 17.4.4_zf2cl32i2oyeyuxbu5zihobrqa
   '@commitlint/types': 17.4.4
-  '@headlessui/tailwindcss': 0.1.1_tailwindcss@3.2.4
+  '@headlessui/tailwindcss': 0.1.2_tailwindcss@3.2.4
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.3
   '@svgr/webpack': 6.5.1
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
@@ -1961,18 +1961,6 @@ packages:
       conventional-changelog-conventionalcommits: 5.0.0
     dev: true
 
-  /@commitlint/config-validator/17.4.0:
-    resolution:
-      {
-        integrity: sha512-Sa/+8KNpDXz4zT4bVbz2fpFjvgkPO6u2V2fP4TKgt6FjmOw2z3eEX859vtfeaTav/ukBw0/0jr+5ZTZp9zCBhA==,
-      }
-    engines: { node: '>=v14' }
-    dependencies:
-      '@commitlint/types': 17.4.4
-      ajv: 8.12.0
-    dev: true
-    optional: true
-
   /@commitlint/config-validator/17.4.4:
     resolution:
       {
@@ -2065,34 +2053,6 @@ packages:
       '@commitlint/types': 17.4.4
     dev: true
 
-  /@commitlint/load/17.4.2:
-    resolution:
-      {
-        integrity: sha512-Si++F85rJ9t4hw6JcOw1i2h0fdpdFQt0YKwjuK4bk9KhFjyFkRxvR3SB2dPaMs+EwWlDrDBGL+ygip1QD6gmPw==,
-      }
-    engines: { node: '>=v14' }
-    requiresBuild: true
-    dependencies:
-      '@commitlint/config-validator': 17.4.0
-      '@commitlint/execute-rule': 17.4.0
-      '@commitlint/resolve-extends': 17.4.0
-      '@commitlint/types': 17.4.4
-      '@types/node': 14.18.33
-      chalk: 4.1.2
-      cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.2.0_ninnubq4fw55bd33wifn4ophfq
-      lodash.isplainobject: 4.0.6
-      lodash.merge: 4.6.2
-      lodash.uniq: 4.5.0
-      resolve-from: 5.0.0
-      ts-node: 10.9.1_w6ufic3jqylcjznzspnj4wjqfe
-      typescript: 4.9.5
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@swc/wasm'
-    dev: true
-    optional: true
-
   /@commitlint/load/17.4.4:
     resolution:
       {
@@ -2152,22 +2112,6 @@ packages:
       git-raw-commits: 2.0.11
       minimist: 1.2.8
     dev: true
-
-  /@commitlint/resolve-extends/17.4.0:
-    resolution:
-      {
-        integrity: sha512-3JsmwkrCzoK8sO22AzLBvNEvC1Pmdn/65RKXzEtQMy6oYMl0Snrq97a5bQQEFETF0VsvbtUuKttLqqgn99OXRQ==,
-      }
-    engines: { node: '>=v14' }
-    dependencies:
-      '@commitlint/config-validator': 17.4.0
-      '@commitlint/types': 17.4.4
-      import-fresh: 3.3.0
-      lodash.mergewith: 4.6.2
-      resolve-from: 5.0.0
-      resolve-global: 1.0.0
-    dev: true
-    optional: true
 
   /@commitlint/resolve-extends/17.4.4:
     resolution:
@@ -2294,10 +2238,10 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@headlessui/tailwindcss/0.1.1_tailwindcss@3.2.4:
+  /@headlessui/tailwindcss/0.1.2_tailwindcss@3.2.4:
     resolution:
       {
-        integrity: sha512-MJbc/MG1iVDow0IQYdsZNVY2xiTa2fDpXLF01xIAyNH6M+Ks0c6X0k3x6PqAvwvKWKEFhS0MlMzrDUVTU6cXDA==,
+        integrity: sha512-AQNESz+f1grCxifrocOE6hDMDFqhqY0g3xrSGOS0ocGkmVkssaBzXaAPAPNSs/nHmr4ZUhfl5THQpYrvaouWlQ==,
       }
     engines: { node: '>=10' }
     peerDependencies:
@@ -7382,25 +7326,6 @@ packages:
       typescript: 4.9.5
     dev: true
 
-  /cosmiconfig-typescript-loader/4.2.0_ninnubq4fw55bd33wifn4ophfq:
-    resolution:
-      {
-        integrity: sha512-NkANeMnaHrlaSSlpKGyvn2R4rqUDeE/9E5YHx+b4nwo0R8dZyAqcih8/gxpCZvqWP9Vf6xuLpMSzSgdVEIM78g==,
-      }
-    engines: { node: '>=12', npm: '>=6' }
-    peerDependencies:
-      '@types/node': '*'
-      cosmiconfig: '>=7'
-      ts-node: '>=10'
-      typescript: '>=3'
-    dependencies:
-      '@types/node': 14.18.33
-      cosmiconfig: 8.0.0
-      ts-node: 10.9.1_w6ufic3jqylcjznzspnj4wjqfe
-      typescript: 4.9.5
-    dev: true
-    optional: true
-
   /cosmiconfig/7.1.0:
     resolution:
       {
@@ -7579,7 +7504,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.3
     optionalDependencies:
-      '@commitlint/load': 17.4.2
+      '@commitlint/load': 17.4.4
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
