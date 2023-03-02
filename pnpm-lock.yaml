@@ -31,7 +31,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.45.0
   autoprefixer: 10.4.13
   clsx: 1.2.1
-  commitizen: 4.2.5
+  commitizen: 4.3.0
   cross-env: 7.0.3
   dot-case: 3.0.4
   eslint: 8.33.0
@@ -105,7 +105,7 @@ devDependencies:
   '@clerk/types': 3.28.0
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
-  '@commitlint/cz-commitlint': 17.4.4_zf2cl32i2oyeyuxbu5zihobrqa
+  '@commitlint/cz-commitlint': 17.4.4_i4x6owxztfhigiiqlxwntt4k24
   '@commitlint/types': 17.4.4
   '@headlessui/tailwindcss': 0.1.2_tailwindcss@3.2.4
   '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.3
@@ -120,7 +120,7 @@ devDependencies:
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.45.0_ax36r7lnq4exysbjfqyma6v3xa
   autoprefixer: 10.4.13_postcss@8.4.19
-  commitizen: 4.2.5
+  commitizen: 4.3.0
   cross-env: 7.0.3
   eslint: 8.33.0
   eslint-config-airbnb: 19.0.4_uhus6rimx3ujvztlky4xaizltu
@@ -1972,7 +1972,7 @@ packages:
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/cz-commitlint/17.4.4_zf2cl32i2oyeyuxbu5zihobrqa:
+  /@commitlint/cz-commitlint/17.4.4_i4x6owxztfhigiiqlxwntt4k24:
     resolution:
       {
         integrity: sha512-UNUx5mCVLKNg81PEX4cNFjG22MG7nbZayTea2lvqtQrUobvGWY+35jvYVU7qpYPYUUs17wDbltkVkC+Qf3eBqg==,
@@ -1986,7 +1986,7 @@ packages:
       '@commitlint/load': 17.4.4
       '@commitlint/types': 17.4.4
       chalk: 4.1.2
-      commitizen: 4.2.5
+      commitizen: 4.3.0
       inquirer: 8.2.5
       lodash.isplainobject: 4.0.6
       word-wrap: 1.2.3
@@ -7115,10 +7115,10 @@ packages:
     engines: { node: ^12.20.0 || >=14 }
     dev: true
 
-  /commitizen/4.2.5:
+  /commitizen/4.3.0:
     resolution:
       {
-        integrity: sha512-9sXju8Qrz1B4Tw7kC5KhnvwYQN88qs2zbiB8oyMsnXZyJ24PPGiNM3nHr73d32dnE3i8VJEXddBFIbOgYSEXtQ==,
+        integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==,
       }
     engines: { node: '>= 12' }
     hasBin: true
@@ -7131,10 +7131,10 @@ packages:
       find-root: 1.1.0
       fs-extra: 9.1.0
       glob: 7.2.3
-      inquirer: 8.2.4
+      inquirer: 8.2.5
       is-utf8: 0.2.1
       lodash: 4.17.21
-      minimist: 1.2.6
+      minimist: 1.2.7
       strip-bom: 4.0.0
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -7498,7 +7498,7 @@ packages:
     engines: { node: '>= 10' }
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.2.5
+      commitizen: 4.3.0
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
@@ -10268,30 +10268,6 @@ packages:
       - encoding
     dev: false
 
-  /inquirer/8.2.4:
-    resolution:
-      {
-        integrity: sha512-nn4F01dxU8VeKfq192IjLsxu0/OmMZ4Lg3xKAns148rCaXP6ntAoEkVYZThWjwON8AlzdZZi6oqnhNbxUG9hVg==,
-      }
-    engines: { node: '>=12.0.0' }
-    dependencies:
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      cli-cursor: 3.1.0
-      cli-width: 3.0.0
-      external-editor: 3.1.0
-      figures: 3.2.0
-      lodash: 4.17.21
-      mute-stream: 0.0.8
-      ora: 5.4.1
-      run-async: 2.4.1
-      rxjs: 7.5.7
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      through: 2.3.8
-      wrap-ansi: 7.0.0
-    dev: true
-
   /inquirer/8.2.5:
     resolution:
       {
@@ -12219,10 +12195,10 @@ packages:
       kind-of: 6.0.3
     dev: true
 
-  /minimist/1.2.6:
+  /minimist/1.2.7:
     resolution:
       {
-        integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==,
+        integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==,
       }
     dev: true
 
