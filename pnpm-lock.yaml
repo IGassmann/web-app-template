@@ -12,7 +12,7 @@ specifiers:
   '@heroicons/react': 2.0.13
   '@ianvs/prettier-plugin-sort-imports': 3.7.1
   '@segment/analytics-next': 1.46.1
-  '@segment/analytics-node': 0.0.1-beta.16
+  '@segment/analytics-node': 0.0.1-rc.3
   '@sentry/nextjs': 7.34.0
   '@svgr/webpack': 6.5.1
   '@tailwindcss/forms': 0.5.3
@@ -80,7 +80,7 @@ dependencies:
   '@headlessui/react': 1.7.8_biqbaboplfbrettd7655fr4n2y
   '@heroicons/react': 2.0.13_react@18.2.0
   '@segment/analytics-next': 1.46.1
-  '@segment/analytics-node': 0.0.1-beta.16
+  '@segment/analytics-node': 0.0.1-rc.3
   '@sentry/nextjs': 7.34.0_next@13.2.4+react@18.2.0
   '@tanstack/react-query': 4.23.0_biqbaboplfbrettd7655fr4n2y
   '@trpc/client': 10.9.0_@trpc+server@10.9.0
@@ -3004,10 +3004,10 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@segment/analytics-core/1.2.0:
+  /@segment/analytics-core/1.2.2:
     resolution:
       {
-        integrity: sha512-2BSliLJi1RWq8+eE+UKcMEiC5WfZZp3SHIA/fGhFftOg2s1OkFaQRHuKFzdgbDuKZMEsRwqek3EITNGSThJ5rg==,
+        integrity: sha512-zVWSDcyh7Rp32xL5v2fuEk2yZxxy+JA93vF1L3EF9XAYLSra/uEHJEswOWieXSdDHVRHes7APORp136usFE/tw==,
       }
     dependencies:
       '@lukeed/uuid': 2.0.0
@@ -3037,17 +3037,17 @@ packages:
       - supports-color
     dev: false
 
-  /@segment/analytics-node/0.0.1-beta.16:
+  /@segment/analytics-node/0.0.1-rc.3:
     resolution:
       {
-        integrity: sha512-WYKvLQ1xyDNOzxZ9+ltF/ROB6MhsFeKaNlVAam3FKVczMg+gNa2KKvfOUA3wXxIhvDvWaZY7e7MWEXxxukl4+g==,
+        integrity: sha512-VdqVttBMKkG7lYhoMM56pqa04Wafzc9fSHEjIWYY+XH7/h6TJNKeRO6KYkRLLaOSxSaUnsrUfSccCLOIYozO6w==,
       }
     engines: { node: '>=14' }
     dependencies:
       '@lukeed/uuid': 2.0.0
-      '@segment/analytics-core': 1.2.0
-      node-fetch: 2.6.7
-      tslib: 2.4.1
+      '@segment/analytics-core': 1.2.2
+      node-fetch: 2.6.9
+      tslib: 2.5.0
     transitivePeerDependencies:
       - encoding
     dev: false
