@@ -55,7 +55,7 @@ specifiers:
   jest-environment-jsdom: 29.3.1
   lint-staged: 13.0.4
   next: 13.2.4
-  next-router-mock: 0.8.0
+  next-router-mock: 0.9.3
   postcss: 8.4.19
   postcss-focus-visible: 7.1.0
   prettier: 2.8.3
@@ -140,7 +140,7 @@ devDependencies:
   jest: 29.3.1_odkjkoia5xunhxkdrka32ib6vi
   jest-environment-jsdom: 29.3.1
   lint-staged: 13.0.4
-  next-router-mock: 0.8.0_next@13.2.4+react@18.2.0
+  next-router-mock: 0.9.3_next@13.2.4+react@18.2.0
   postcss: 8.4.19
   postcss-focus-visible: 7.1.0_postcss@8.4.19
   prettier: 2.8.3
@@ -9186,8 +9186,8 @@ packages:
       '@segment/isodate': 1.0.3
     dev: false
 
-  /next-router-mock/0.8.0_next@13.2.4+react@18.2.0:
-    resolution: {integrity: sha512-aw/QnDFRqGDIkC3y4mCL5HQCNK94IzIfrEYy2c17WVp6Q4V5GUarFx751Sccf8fUPdkzD2/RsldyScvNZGA8lw==}
+  /next-router-mock/0.9.3_next@13.2.4+react@18.2.0:
+    resolution: {integrity: sha512-jl8eFe71LpMVGeBMpoxILkGfEgGY7IfLy8XPyv05/o61p5oQRNpoMmk46VMxRIpt0fI8XcvznBZKpDK6vbYQcQ==}
     peerDependencies:
       next: '>=10.0.0'
       react: '>=17.0.0'
