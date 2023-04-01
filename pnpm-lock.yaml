@@ -39,7 +39,7 @@ specifiers:
   eslint-config-airbnb-typescript: 17.0.0
   eslint-config-next: 13.2.4
   eslint-config-prettier: 8.5.0
-  eslint-config-turbo: 0.0.7
+  eslint-config-turbo: 1.8.8
   eslint-formatter-pretty: 4.1.0
   eslint-plugin-eslint-comments: 3.2.0
   eslint-plugin-jest: 27.2.1
@@ -127,7 +127,7 @@ devDependencies:
   eslint-config-airbnb-typescript: 17.0.0_tsjtpq4tfcpcwwkug22jz6ufse
   eslint-config-next: 13.2.4_4vsywjlpuriuw3tl5oq6zy5a64
   eslint-config-prettier: 8.5.0_eslint@8.33.0
-  eslint-config-turbo: 0.0.7_eslint@8.33.0
+  eslint-config-turbo: 1.8.8_eslint@8.33.0
   eslint-formatter-pretty: 4.1.0
   eslint-plugin-eslint-comments: 3.2.0_eslint@8.33.0
   eslint-plugin-jest: 27.2.1_hj6vhuylmmjkbpluv2fihh7kmy
@@ -6461,13 +6461,13 @@ packages:
       eslint: 8.33.0
     dev: true
 
-  /eslint-config-turbo/0.0.7_eslint@8.33.0:
-    resolution: {integrity: sha512-WbrGlyfs94rOXrhombi1wjIAYGdV2iosgJRndOZtmDQeq5GLTzYmBUCJQZWtLBEBUPCj96RxZ2OL7Cn+xv/Azg==}
+  /eslint-config-turbo/1.8.8_eslint@8.33.0:
+    resolution: {integrity: sha512-+yT22sHOT5iC1sbBXfLIdXfbZuiv9bAyOXsxTxFCWelTeFFnANqmuKB3x274CFvf7WRuZ/vYP/VMjzU9xnFnxA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.33.0
-      eslint-plugin-turbo: 0.0.7_eslint@8.33.0
+      eslint-plugin-turbo: 1.8.8_eslint@8.33.0
     dev: true
 
   /eslint-formatter-pretty/4.1.0:
@@ -6762,8 +6762,8 @@ packages:
       '@microsoft/tsdoc-config': 0.16.2
     dev: true
 
-  /eslint-plugin-turbo/0.0.7_eslint@8.33.0:
-    resolution: {integrity: sha512-iajOH8eD4jha3duztGVBD1BEmvNrQBaA/y3HFHf91vMDRYRwH7BpHSDFtxydDpk5ghlhRxG299SFxz7D6z4MBQ==}
+  /eslint-plugin-turbo/1.8.8_eslint@8.33.0:
+    resolution: {integrity: sha512-zqyTIvveOY4YU5jviDWw9GXHd4RiKmfEgwsjBrV/a965w0PpDwJgEUoSMB/C/dU310Sv9mF3DSdEjxjJLaw6rA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
