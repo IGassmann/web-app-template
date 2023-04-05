@@ -1,7 +1,7 @@
 import inngest from '@/features/common/inngest';
 
 const testInngestFunction = inngest.createFunction(
-  { name: 'Prepare weekly digest' },
+  { name: 'Prepare weekly digest 2' },
   { cron: 'TZ=Europe/Paris * * * * *' },
   async () => {
     await inngest.send({
