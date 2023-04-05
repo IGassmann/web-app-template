@@ -7,7 +7,7 @@ const testInngestFunction = inngest.createFunction(
     await inngest.send({
       name: 'app/test.event',
       data: {
-        foo: 'bar',
+        foo: 'bara',
       },
     });
   }
