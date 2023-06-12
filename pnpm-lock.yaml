@@ -26,7 +26,7 @@ specifiers:
   '@trpc/server': 10.9.0
   '@types/jest': 29.2.3
   '@types/node': 18.x
-  '@types/react': 18.0.25
+  '@types/react': 18.2.11
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.45.0
   autoprefixer: 10.4.13
@@ -116,7 +116,7 @@ devDependencies:
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 29.2.3
   '@types/node': 18.11.9
-  '@types/react': 18.0.25
+  '@types/react': 18.2.11
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.45.0_a2mkgd3s6uafekiebnxrnfnsj4
   autoprefixer: 10.4.13_postcss@8.4.19
@@ -5360,13 +5360,13 @@ packages:
         integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==,
       }
     dependencies:
-      '@types/react': 18.0.25
+      '@types/react': 18.2.11
     dev: true
 
-  /@types/react/18.0.25:
+  /@types/react/18.2.11:
     resolution:
       {
-        integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==,
+        integrity: sha512-+hsJr9hmwyDecSMQAmX7drgbDpyE+EgSF6t7+5QEBAn1tQK7kl1vWZ4iRf6SjQ8lk7dyEULxUmZOIpN0W5baZA==,
       }
     dependencies:
       '@types/prop-types': 15.7.5
