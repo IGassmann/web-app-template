@@ -4,11 +4,11 @@ import type { AsyncReturnType } from 'type-fest';
 
 import serverAnalytics from '@/features/analytics/serverAnalytics';
 
-type Context = {
+export default interface Context {
   userId: string | undefined;
   isAdmin: boolean;
   analytics: AsyncReturnType<typeof serverAnalytics>;
-};
+}
 
 /**
  * Creates the context used in the tRPC router. It is used to process every request that goes
@@ -28,5 +28,3 @@ export async function createContext(options: CreateNextContextOptions): Promise<
     analytics,
   };
 }
-
-export default Context;
