@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -16,9 +20,18 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"],
-      "test-utils": ["./test/test-utils"]
-    }
+      "@/*": [
+        "./src/*"
+      ],
+      "test-utils": [
+        "./test/test-utils"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "./src/**/*",
@@ -29,7 +42,10 @@
     "./sentry.client.config.ts",
     "./sentry.edge.config.ts",
     "./sentry.server.config.ts",
-    "./tailwind.config.js"
+    "./tailwind.config.js",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
