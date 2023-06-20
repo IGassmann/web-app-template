@@ -7,5 +7,4 @@ export default interface ClerkUserCreatedEvent extends EventPayload {
   user: UserJSON & {
     email: string;
   };
-  asd: string;
 }

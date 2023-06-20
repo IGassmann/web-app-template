@@ -25,6 +25,9 @@ rules:
   eslint-comments/require-description: error # Prevents disabling eslint rules without providing a reason.
   tsdoc/syntax: error
 overrides:
+  - files: './src/app/**/route.ts'
+    rules:
+      import/prefer-default-export: off # Route handlers must be exported as named exports.
   - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
     extends:
       - plugin:jest/recommended

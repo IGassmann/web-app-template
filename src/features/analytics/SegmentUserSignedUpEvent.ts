@@ -3,7 +3,7 @@ import type { EventPayload } from 'inngest';
 
 export default interface SegmentUserSignedUp extends EventPayload {
   name: 'segment/user.signed.up';
-  data: EventProperties | undefined;
+  data: EventProperties;
   user: Traits;
   ts: number;
 }
