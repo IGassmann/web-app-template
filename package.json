@@ -28,7 +28,8 @@
     "adr:list": "log4brains adr list",
     "adr:new": "log4brains adr new",
     "adr:preview": "log4brains preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@clerk/nextjs": "4.14.0",
