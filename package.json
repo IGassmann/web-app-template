@@ -43,7 +43,6 @@
     "@trpc/next": "10.9.0",
     "@trpc/react-query": "10.9.0",
     "@trpc/server": "10.9.0",
-    "clsx": "1.2.1",
     "dot-case": "3.0.4",
     "focus-visible": "5.2.0",
     "inngest": "1.0.0",

@@ -38,9 +38,6 @@ dependencies:
   '@trpc/server':
     specifier: 10.9.0
     version: 10.9.0
-  clsx:
-    specifier: 1.2.1
-    version: 1.2.1
   dot-case:
     specifier: 3.0.4
     version: 3.0.4
@@ -7391,14 +7388,6 @@ packages:
       }
     engines: { node: '>=0.8' }
     dev: true
-
-  /clsx@1.2.1:
-    resolution:
-      {
-        integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==,
-      }
-    engines: { node: '>=6' }
-    dev: false
 
   /co@4.6.0:
     resolution:
