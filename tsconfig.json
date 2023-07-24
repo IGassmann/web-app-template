@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "noUncheckedIndexedAccess": true,
     "jsx": "preserve",
