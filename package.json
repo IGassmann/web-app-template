@@ -81,7 +81,7 @@
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
     "eslint-config-next": "13.4.12",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "8.9.0",
     "eslint-config-turbo": "1.8.8",
     "eslint-formatter-pretty": "4.1.0",
     "eslint-plugin-eslint-comments": "3.2.0",
