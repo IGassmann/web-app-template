@@ -1,6 +1,7 @@
 # Web App Template
 
-Web app template is a simple but complete template for creating web apps.
+This is a complete template for building web apps. It's primarily intended for my own usage.
+I use it to gather my learnings and opinions on best practices and configurations.
 
 ## Setup
 
