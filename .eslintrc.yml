@@ -3,7 +3,6 @@ plugins:
   - tsdoc
 extends:
   - airbnb
-  - airbnb/hooks
   - airbnb-typescript
   - plugin:unicorn/recommended
   - next/core-web-vitals
