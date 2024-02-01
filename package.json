@@ -54,7 +54,7 @@
     "react-query": "3.39.2",
     "superjson": "1.12.2",
     "tailwind-merge": "1.14.0",
-    "zod": "3.21.4"
+    "zod": "3.22.4"
   },
   "devDependencies": {
     "@clerk/types": "3.60.0",
