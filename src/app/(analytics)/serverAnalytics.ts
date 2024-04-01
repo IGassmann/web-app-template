@@ -2,7 +2,7 @@ import util from 'node:util';
 import { Analytics, Context } from '@segment/analytics-node';
 import { captureException } from '@sentry/nextjs';
 
-import sentryIdentifyPlugin from '@/features/analytics/sentryIdentifyPlugin';
+import sentryIdentifyPlugin from '@/app/(analytics)/sentryIdentifyPlugin';
 
 const analyticsCallNames = ['identify', 'track', 'page', 'screen', 'group', 'alias'] as const;
 type AnalyticsCallName = (typeof analyticsCallNames)[number];

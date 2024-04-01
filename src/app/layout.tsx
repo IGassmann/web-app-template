@@ -3,7 +3,7 @@ import { ClerkProvider } from '@clerk/nextjs';
 
 import '@/styles/globals.css';
 
-import Analytics from '@/features/analytics/Analytics';
+import Analytics from '@/app/(analytics)/Analytics';
 
 export const metadata: Metadata = {
   title: {

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GithubIcon from '@/features/common/images/social-icons/github.svg';
-import TwitterIcon from '@/features/common/images/social-icons/twitter.svg';
+import GithubIcon from './social-icons/github.svg';
+import TwitterIcon from './social-icons/twitter.svg';
 
 const socialLinks = [
   {
