@@ -1,6 +1,9 @@
+import headlessUIPlugin from '@headlessui/tailwindcss';
+import formsPlugin from '@tailwindcss/forms';
+import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 
-const tailwindCSSConfig = {
+export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
@@ -9,11 +12,5 @@ const tailwindCSSConfig = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@headlessui/tailwindcss'),
-  ],
-};
-
-export default tailwindCSSConfig;
+  plugins: [formsPlugin, headlessUIPlugin],
+} satisfies Config;

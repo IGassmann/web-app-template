@@ -1,16 +1,11 @@
-import type { FunctionComponent, ReactNode } from 'react';
+'use client';
 
-import useAnalyticsIdentify from '@/features/analytics/useAnalyticsIdentify';
-import useAnalyticsPageTracking from '@/features/analytics/useAnalyticsPageTracking';
+// import useAnalyticsIdentify from '@/features/analytics/useAnalyticsIdentify';
+// import useAnalyticsPageTracking from '@/features/analytics/useAnalyticsPageTracking';
 
-type AnalyticsProperties = {
-  children: ReactNode;
-};
+export default function Analytics() {
+  // useAnalyticsIdentify();
+  // useAnalyticsPageTracking();
 
-const Analytics: FunctionComponent<AnalyticsProperties> = ({ children }) => {
-  useAnalyticsIdentify();
-  useAnalyticsPageTracking();
-
-  return <div>{children}</div>;
-};
-export default Analytics;
+  return null;
+}

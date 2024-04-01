@@ -1,6 +1,6 @@
 {
   "name": "web-app-template",
-  "description": "Igor Gassmann’s web app template",
+  "description": "An opinionated template for building web apps.",
   "keywords": [
     "react",
     "nextjs",
@@ -33,16 +33,11 @@
     "@heroicons/react": "2.0.13",
     "@segment/analytics-next": "1.46.1",
     "@segment/analytics-node": "0.0.1-rc.3",
-    "@sentry/nextjs": "7.48.0",
-    "dot-case": "3.0.4",
+    "@sentry/nextjs": "7.109.0",
     "focus-visible": "5.2.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.45.1",
-    "react-hot-toast": "2.4.0",
-    "react-query": "3.39.2",
-    "superjson": "1.12.2",
     "tailwind-merge": "1.14.0",
     "zod": "3.21.4"
   },
@@ -56,7 +51,6 @@
     "@ianvs/prettier-plugin-sort-imports": "3.7.2",
     "@svgr/webpack": "8.0.1",
     "@tailwindcss/forms": "0.5.4",
-    "@tailwindcss/typography": "0.5.9",
     "@testing-library/jest-dom": "5.17.0",
     "@testing-library/react": "13.4.0",
     "@types/jest": "29.2.3",
@@ -96,11 +90,6 @@
     "type-fest": "3.7.2",
     "typescript": "5.1.3",
     "vercel": "28.5.6"
-  },
-  "pnpm": {
-    "overrides": {
-      "@typescript-eslint/parser": "6.2.0"
-    }
   },
   "engines": {
     "node": "20.x",
