@@ -3,21 +3,21 @@
 This is a complete template for building web apps. It's primarily intended for my own usage. I use
 it to gather my learnings and opinions on best practices and configurations.
 
-## Features
+## Tech Stack
 
-- **Next.js**
-- **TypeScript**
-- **Tailwind CSS**
-- **Tailwind Catalyst**
-- **Clerk**
-- **Prettier**
-- **ESLint**
-- **SVGR**
-- **Conventional Commits**
-- **Airbnb Style Guide**
-- **pnpm**
-- **Segment Analytics**
-- **Sentry**
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Tailwind Catalyst
+- Clerk
+- Prettier
+- ESLint
+- SVGR
+- Conventional Commits
+- Airbnb Style Guide
+- pnpm
+- Segment Analytics
+- Sentry
 
 ## Setup
 
