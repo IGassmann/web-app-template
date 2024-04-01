@@ -1,15 +1,18 @@
 # [short title of solved problem and solution]
 
-- Status: [draft | proposed | rejected | accepted | deprecated | … | superseded by [xxx](yyyymmdd-xxx.md)] <!-- optional -->
+- Status: [draft | proposed | rejected | accepted | deprecated | … | superseded by
+  [xxx](yyyymmdd-xxx.md)] <!-- optional -->
 - Deciders: [list everyone involved in the decision] <!-- optional -->
-- Date: [YYYY-MM-DD when the decision was last updated] <!-- optional. To customize the ordering without relying on Git creation dates and filenames -->
+- Date: [YYYY-MM-DD when the decision was last updated]
+  <!-- optional. To customize the ordering without relying on Git creation dates and filenames -->
 - Tags: [space and/or comma separated list of tags] <!-- optional -->
 
 Technical Story: [description | ticket/issue URL] <!-- optional -->
 
 ## Context and Problem Statement
 
-[Describe the context and problem statement, e.g., in free form using two to three sentences. You may want to articulate the problem in form of a question.]
+[Describe the context and problem statement, e.g., in free form using two to three sentences. You
+may want to articulate the problem in form of a question.]
 
 ## Decision Drivers <!-- optional -->
 
@@ -26,7 +29,8 @@ Technical Story: [description | ticket/issue URL] <!-- optional -->
 
 ## Decision Outcome
 
-Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force force | … | comes out best (see below)].
+Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion
+decision driver | which resolves force force | … | comes out best (see below)].
 
 ### Positive Consequences <!-- optional -->
 

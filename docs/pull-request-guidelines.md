@@ -102,17 +102,16 @@ follow along, and enables to look-up decisions and understand code development a
 
 ### Don't Add to the PR Yourself
 
-It's sometimes tempting to fix a bug in a PR yourself, to rework a section to meet coding
-standards, or to merge the PR yourself.
+It's sometimes tempting to fix a bug in a PR yourself, to rework a section to meet coding standards,
+or to merge the PR yourself.
 
 If you do this without communicating beforehand with the author, you might interfere with his work
 and steal the opportunity to explain what he did. For code changes, use instead
 [GitHub suggestions](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)
 to propose code changes that the author can easily commit.
 
-If the original PR is “good enough,” approve the PR and leave comments about the changes
-you'd like to see. If the author doesn't have time to make the changes, you can make them yourself
-in a new PR.
+If the original PR is “good enough,” approve the PR and leave comments about the changes you'd like
+to see. If the author doesn't have time to make the changes, you can make them yourself in a new PR.
 
 Regarding the merge, the author is always the best person to know when the PR is ready to be merged,
 especially when there are dependencies like other PRs that need to be merged first, configuration

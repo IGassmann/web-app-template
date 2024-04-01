@@ -17,5 +17,5 @@ Sentry.getCurrentHub?.()
     new Sentry.Replay({
       maskAllText: false,
       blockAllMedia: false,
-    })
+    }),
   );

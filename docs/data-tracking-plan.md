@@ -74,8 +74,8 @@ important business decisions.
 > [naming convention](https://segment.com/academy/collecting-data/naming-conventions-for-clean-data/)
 > is critical to consistent accurate analytics.
 
-We follow Segment's
-recommended [object-action framework](https://segment.com/academy/collecting-data/naming-conventions-for-clean-data/)
+We follow Segment's recommended
+[object-action framework](https://segment.com/academy/collecting-data/naming-conventions-for-clean-data/)
 naming convention.
 
 This naming convention is simple, easy to implement, extensible, and most importantly, Segment will

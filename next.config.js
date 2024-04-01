@@ -32,7 +32,7 @@ const nextConfig = {
         issuer: fileLoaderRule.issuer,
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] }, // exclude if *.svg?url
         use: ['@svgr/webpack'],
-      }
+      },
     );
 
     // Modify the file loader rule to ignore *.svg, since we have it handled now.
@@ -43,7 +43,7 @@ const nextConfig = {
     config.plugins.push(
       new webpack.DefinePlugin({
         __SENTRY_DEBUG__: dev,
-      })
+      }),
     );
 
     return config;

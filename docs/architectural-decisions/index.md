@@ -3,16 +3,19 @@ You are free to edit it as you want -->
 
 # Architectural Decision Log
 
-Welcome 👋 to the architectural decision log of this project.
-You will find here all the Architecture Decision Records (ADRs) of this project.
+Welcome 👋 to the architectural decision log of this project. You will find here all the
+Architecture Decision Records (ADRs) of this project.
 
 ## Definition and purpose
 
-> An Architectural Decision (AD) is a software design choice that addresses a functional or non-functional requirement that is architecturally significant.
-> An Architectural Decision Record (ADR) captures a single AD, such as often done when writing personal notes or meeting minutes; the collection of ADRs created and maintained in a project constitutes its decision log.
+> An Architectural Decision (AD) is a software design choice that addresses a functional or
+> non-functional requirement that is architecturally significant. An Architectural Decision Record
+> (ADR) captures a single AD, such as often done when writing personal notes or meeting minutes; the
+> collection of ADRs created and maintained in a project constitutes its decision log.
 
-An ADR is immutable: only its status can change (i.e., become deprecated or superseded). That way, you can become familiar with the whole project history just by reading its decision log in chronological order.
-Moreover, maintaining this documentation aims at:
+An ADR is immutable: only its status can change (i.e., become deprecated or superseded). That way,
+you can become familiar with the whole project history just by reading its decision log in
+chronological order. Moreover, maintaining this documentation aims at:
 
 - 🚀 Improving and speeding up the onboarding of a new team member
 - 🔭 Avoiding blind acceptance/reversal of a past decision
@@ -22,9 +25,10 @@ Moreover, maintaining this documentation aims at:
 
 ## Usage
 
-This website is automatically updated after a change on the `main` branch of the project's Git repository.
-In fact, the developers manage this documentation directly with markdown files located next to their code, so it is more convenient for them to keep it up-to-date.
-You can browse the ADRs by using the left menu or the search bar.
+This website is automatically updated after a change on the `main` branch of the project's Git
+repository. In fact, the developers manage this documentation directly with markdown files located
+next to their code, so it is more convenient for them to keep it up-to-date. You can browse the ADRs
+by using the left menu or the search bar.
 
 The typical workflow of an ADR is the following:
 

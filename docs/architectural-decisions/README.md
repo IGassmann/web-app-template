@@ -22,7 +22,8 @@ To create a new ADR, run the following command:
 $ pnpm adr:new
 ```
 
-This will create a new ADR file in `docs/architectural-decisions` and open it in your default editor.
+This will create a new ADR file in `docs/architectural-decisions` and open it in your default
+editor.
 
 ### Listing ADRs
 
@@ -40,4 +41,5 @@ To preview the architectural decision log locally, run the following command:
 $ pnpm adr:preview
 ```
 
-In preview mode, the Hot Reload feature is enabled: any change you make to a markdown file is applied live in the UI.
+In preview mode, the Hot Reload feature is enabled: any change you make to a markdown file is
+applied live in the UI.

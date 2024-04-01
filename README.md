@@ -1,7 +1,7 @@
 # Web App Template
 
-This is a complete template for building web apps. It's primarily intended for my own usage.
-I use it to gather my learnings and opinions on best practices and configurations.
+This is a complete template for building web apps. It's primarily intended for my own usage. I use
+it to gather my learnings and opinions on best practices and configurations.
 
 ## Setup
 
@@ -96,7 +96,8 @@ $ pnpm lint
 Staged files are automatically linted before commits. Be sure to **fix all linting errors before
 committing**.
 
-We recommend using an [editor integration for ESLint](https://eslint.org/docs/user-guide/integrations).
+We recommend using an
+[editor integration for ESLint](https://eslint.org/docs/user-guide/integrations).
 
 ### Code Formatting
 
@@ -225,9 +226,11 @@ production environment.
 
 We use Architectural Decision Records (ADRs) for documenting architectural significant decisions.
 
-To learn more about ADRs and browse them, check out [our architectural decision log](https://adr.web-app-template.igassmann.me/).
+To learn more about ADRs and browse them, check out
+[our architectural decision log](https://adr.web-app-template.igassmann.me/).
 
-To learn how to write a new ADR, check out [docs/architectural-decisions/README.md](./docs/architectural-decisions/README.md).
+To learn how to write a new ADR, check out
+[docs/architectural-decisions/README.md](./docs/architectural-decisions/README.md).
 
 ### Data Tracking Plan
 

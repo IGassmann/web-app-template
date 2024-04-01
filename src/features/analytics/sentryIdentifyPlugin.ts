@@ -7,10 +7,10 @@ type NonNullValues<T> = {
 };
 
 function mapObjectNullValuesToUndefined<T extends Record<string, unknown>>(
-  object: T
+  object: T,
 ): NonNullValues<Record<string, unknown>> {
   return Object.fromEntries(
-    Object.entries(object).map(([key, value]) => [key, value ?? undefined])
+    Object.entries(object).map(([key, value]) => [key, value ?? undefined]),
   );
 }
 

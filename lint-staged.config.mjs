@@ -4,6 +4,8 @@ const ESLintTask = (fileNames) =>
     .join(' --file ')}`;
 
 export default {
+  // Type-check TypeScript files
+  '**/*.{ts,tsx}': () => 'tsc -p tsconfig.json --noEmit',
   // Run tests
   './src/**/*.{ts,tsx}': 'jest --bail --passWithNoTests --findRelatedTests',
   // Run ESLint and Prettier consecutively so that the tasks don't conflict with each other

@@ -10,7 +10,7 @@ type AnalyticsCallName = (typeof analyticsCallNames)[number];
 type AnalyticsCall = (typeof Analytics.prototype)[AnalyticsCallName];
 
 type PromisifyAnalyticsCall<F extends AnalyticsCall> = (
-  arguments_: Parameters<F>[0]
+  arguments_: Parameters<F>[0],
 ) => Promise<Context>;
 
 type PromisifiedAnalyticsCalls = {

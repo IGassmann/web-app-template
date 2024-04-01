@@ -6,8 +6,8 @@
 
 ## Context and Problem Statement
 
-We need a way to build a web application. We want to use a framework that is well-supported and
-that we can bet on for the long term. Which framework should we use?
+We need a way to build a web application. We want to use a framework that is well-supported and that
+we can bet on for the long term. Which framework should we use?
 
 ## Decision Drivers
 
@@ -65,4 +65,5 @@ It's maintained by Facebook.
 - Good, because of its popularity
 - Good, because it's easy to get started
 - Bad, because it doesn't come with routing and server-side rendering
-- Bad, because [their own documentation says it's not the best choice for production apps](https://reactjs.org/learn/start-a-new-react-project#building-with-a-full-featured-framework)
+- Bad, because
+  [their own documentation says it's not the best choice for production apps](https://reactjs.org/learn/start-a-new-react-project#building-with-a-full-featured-framework)

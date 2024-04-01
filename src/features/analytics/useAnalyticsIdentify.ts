@@ -10,7 +10,7 @@
 //   return {
 //     email: user.primaryEmailAddress?.emailAddress,
 //     username: user.username,
-//     avatar: user.profileImageUrl,
+//     avatar: user.imageUrl,
 //     createdAt: user.createdAt,
 //     isAdmin: user.publicMetadata?.isAdmin,
 //   };

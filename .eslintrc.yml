@@ -11,10 +11,10 @@ extends:
   - prettier
 rules:
   consistent-return: off # When enabled, it makes it impossible to use early returns without explicitly returning undefined
-#  react/function-component-definition:
-#    - error
-#    - namedComponents: arrow-function
-#      unnamedComponents: arrow-function
+  #  react/function-component-definition:
+  #    - error
+  #    - namedComponents: arrow-function
+  #      unnamedComponents: arrow-function
   react/jsx-props-no-spreading: off # Prop types already protect against passing invalid or unnecessary props down to components.
   unicorn/filename-case: off
   unicorn/prevent-abbreviations:

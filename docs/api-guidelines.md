@@ -6,10 +6,9 @@ APIs built by Igor Gassmann must follow this document.
 
 All names specified in path and query parameters, resource names, and JSON input and output fields
 and pre-defined values must use verbose naming patterns and must not use abbreviations other than
-acronyms that are the dominant mode of expression in the domain being represented by the API,
-(e.g. URL). Acronyms and initialisms should always be all capitalized or all lowercased. Names
-should be in correct American English. For example, license (instead of licence),
-color (instead of colour).
+acronyms that are the dominant mode of expression in the domain being represented by the API, (e.g.
+URL). Acronyms and initialisms should always be all capitalized or all lowercased. Names should be
+in correct American English. For example, license (instead of licence), color (instead of colour).
 
 ## Endpoints
 
@@ -27,7 +26,8 @@ Bad:
 
 ### Resource Nesting
 
-Nesting of resources should be avoided. [This article](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/)
+Nesting of resources should be avoided.
+[This article](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Best-Practices-for-Sub-and-Nested-Resources/)
 goes in depth on their problems.
 
 If a resource relation can only exist within another resource, sub-resources should be employed.
@@ -49,7 +49,8 @@ Example:
 
 ### Filtering
 
-Use a unique query parameter for each field that implements filtering. [LHS brackets](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#lhs-brackets)
+Use a unique query parameter for each field that implements filtering.
+[LHS brackets](https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/#lhs-brackets)
 should be used to indicate operators.
 
 Example:
@@ -81,9 +82,10 @@ Example:
 
 Pagination can be used to split the results of a query into pages. The API should use
 [cursor-based pagination](https://developers.facebook.com/docs/graph-api/using-graph-api/#paging).
-Pagination details should be included using the [Link header introduced by RFC 5988](https://tools.ietf.org/html/rfc5988#page-6).
-The Link header can return a set of ready-made links, so the API consumer doesn't have to construct
-links themselves.
+Pagination details should be included using the
+[Link header introduced by RFC 5988](https://tools.ietf.org/html/rfc5988#page-6). The Link header
+can return a set of ready-made links, so the API consumer doesn't have to construct links
+themselves.
 
 Example:
 
@@ -147,13 +149,14 @@ sub-resources. `PUT` should also avoid query parameters.
 
 `PATCH` has been standardized by IETF as the method to be used for updating an existing object
 incrementally (see [RFC 5789](https://tools.ietf.org/html/rfc5789)). `PATCH` methods should only
-support partial objects to only update parts of a resource. This is [JSON Merge Patch](https://tools.ietf.org/html/rfc7396),
-a specialized media type `application/merge-patch+json` that is a partial resource representation.
+support partial objects to only update parts of a resource. This is
+[JSON Merge Patch](https://tools.ietf.org/html/rfc7396), a specialized media type
+`application/merge-patch+json` that is a partial resource representation.
 
 ### DELETE
 
-`DELETE` requests are used to delete resources. The semantic is best described as "please delete
-the resource identified by the URL".
+`DELETE` requests are used to delete resources. The semantic is best described as "please delete the
+resource identified by the URL".
 
 `DELETE` requests are usually applied to single resources, not on collection resources, as this
 would imply deleting the entire collection.
@@ -161,8 +164,8 @@ would imply deleting the entire collection.
 Successful `DELETE` requests will usually generate 200 (if the deleted resource is returned) or 204
 (if no content is returned).
 
-Failed `DELETE` requests will usually generate 404 (if the resource cannot be found) or 410
-(if the resource was already deleted before).
+Failed `DELETE` requests will usually generate 404 (if the resource cannot be found) or 410 (if the
+resource was already deleted before).
 
 ## Actions
 
@@ -203,7 +206,8 @@ Bad:
 
 ### Pretty-Print Responses
 
-Results should be pretty-printed by default. The data overhead, with gzip enabled, [is negligible](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#pretty-print-gzip).
+Results should be pretty-printed by default. The data overhead, with gzip enabled,
+[is negligible](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#pretty-print-gzip).
 
 ## Dates
 
@@ -222,8 +226,8 @@ time zones they accept (any valid time zone should be accepted), for example
 
 5xx errors should be only for server errors and uptime failures — there should be no repeatable way
 for users to generate 5xx error codes. 4xx errors should be used when the failure is a result of
-incorrect or unsupported user input. Standard HTTP status codes should be used; see the [HTTP Status
-Code definitions](https://httpstatuses.com/) for more information.
+incorrect or unsupported user input. Standard HTTP status codes should be used; see the
+[HTTP Status Code definitions](https://httpstatuses.com/) for more information.
 
 ### Error JSON Objects
 
@@ -252,9 +256,9 @@ be subject to version control and placed inside the `docs/` directory of the cor
 
 ## Rate Limiting
 
-To prevent abuse, it is standard practice to add some sort of rate limiting to an API. [RFC 6585](http://tools.ietf.org/html/rfc6585#section-4)
-introduced an HTTP status code [429 Too Many Requests](https://tools.ietf.org/html/rfc6585) to
-accommodate this.
+To prevent abuse, it is standard practice to add some sort of rate limiting to an API.
+[RFC 6585](http://tools.ietf.org/html/rfc6585#section-4) introduced an HTTP status code
+[429 Too Many Requests](https://tools.ietf.org/html/rfc6585) to accommodate this.
 
 We should include the following headers:
 
