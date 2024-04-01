@@ -25,10 +25,8 @@
   },
   "include": [
     "./src/**/*",
-    "./test/**/*",
     "./next-env.d.ts",
     "./next.config.js",
-    "./jest.config.js",
     "./sentry.client.config.ts",
     "./sentry.edge.config.ts",
     "./sentry.server.config.ts",

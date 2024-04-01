@@ -39,7 +39,7 @@ const Configuration: UserConfig = {
           },
           config: {
             description:
-              'Changes to project configuration files (example scopes: `jest`, `package-json`, `eslint`)',
+              'Changes to project configuration files (example scopes: `prettier`, `package-json`, `eslint`)',
             title: 'Configuration',
             emoji: '🔧',
           },

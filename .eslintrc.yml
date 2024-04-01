@@ -24,10 +24,5 @@ overrides:
   - files: './src/app/**/route.ts'
     rules:
       import/prefer-default-export: off # Route handlers must be exported as named exports to work.
-  - files: './{src,test}/**/?(*.)+test.{tsx,ts}'
-    extends:
-      - plugin:jest/recommended
-      - plugin:jest-dom/recommended
-      - plugin:testing-library/react
 parserOptions:
   project: ./tsconfig.json

@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            Made by <a href="https://igassmann.me">Igor Gassmann</a>
+            Made by <a href="https://igassmann.me/">Igor Gassmann</a>
           </p>
         </div>
       </div>

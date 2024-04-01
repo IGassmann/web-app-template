@@ -10,10 +10,8 @@ it to gather my learnings and opinions on best practices and configurations.
 - **Tailwind CSS**
 - **Tailwind Catalyst**
 - **Clerk**
-- **React Testing Library**
 - **Prettier**
 - **ESLint**
-- **Jest**
 - **SVGR**
 - **Conventional Commits**
 - **Airbnb Style Guide**
@@ -28,7 +26,7 @@ Before being able to run the app for the first time, you need to follow the step
 ### Prerequisites
 
 - [Git](https://git-scm.com/downloads)
-- [Node.js 18](https://nodejs.org/en/download/)
+- [Node.js v20](https://nodejs.org/en/download/)
   - We recommend using [fnm](https://github.com/Schniz/fnm) to manage Node.js versions. After
     installing it, run `fnm install` in the root directory of the project to install the proper
     Node.js version.
@@ -38,7 +36,7 @@ Before being able to run the app for the first time, you need to follow the step
 
 1. Clone this repository
 2. Install [`pnpm`](https://pnpm.io/) with
-   [Corepack](https://nodejs.org/docs/latest-v18.x/api/corepack.html) by running
+   [Corepack](https://nodejs.org/docs/latest-v20.x/api/corepack.html) by running
    `corepack enable; corepack prepare`
 3. Install dependencies by running `pnpm install`
 4. Link local repository to its Vercel project by running `pnpm vercel link`
@@ -87,20 +85,6 @@ $ pnpm start
 ```
 
 This can be useful for testing the app in production mode locally.
-
-### Testing
-
-To run the test suite, run the following command:
-
-```sh
-$ pnpm test
-```
-
-To run the test suite in watch mode, run the following command:
-
-```sh
-$ pnpm test:watch
-```
 
 ### Code Linting
 
