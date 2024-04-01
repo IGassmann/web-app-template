@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { ClerkProvider } from '@clerk/nextjs';
 
 import Analytics from '@/features/analytics/Analytics';
-import '@/styles/tailwind.css';
+import '@/styles/globals.css';
 import 'focus-visible';
 
 const interFont = Inter({

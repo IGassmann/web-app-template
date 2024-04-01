@@ -1,4 +1,0 @@
-project:
-  name: Web App Template
-  tz: America/New_York
-  adrFolder: ./docs/architectural-decisions/
