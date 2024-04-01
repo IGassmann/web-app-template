@@ -1,5 +1,7 @@
-import Dashboard from './Dashboard';
-
 export default function DashboardPage() {
-  return <Dashboard />;
+  return (
+    <div>
+      <h1>Dashboard</h1>
+    </div>
+  );
 }

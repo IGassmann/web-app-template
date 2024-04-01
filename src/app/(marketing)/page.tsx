@@ -1,8 +1,9 @@
 import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs';
 
-import BottomGradientBackground from '@/app/Landing/bottom-gradient-background.svg';
-import Footer from '@/app/Landing/Footer';
-import TopGradientBackground from '@/app/Landing/top-gradient-background.svg';
+import Footer from '@/app/(marketing)/Footer';
+import Button from '@/components/Button';
+import BottomGradientBackground from './bottom-gradient-background.svg';
+import TopGradientBackground from './top-gradient-background.svg';
 
 export default function HomePage() {
   return (
@@ -17,12 +18,7 @@ export default function HomePage() {
           </SignedIn>
           <SignedOut>
             <SignInButton mode="modal">
-              <button
-                type="button"
-                className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
-              >
-                Sign in
-              </button>
+              <Button outline>Sign in</Button>
             </SignInButton>
           </SignedOut>
         </nav>
@@ -40,12 +36,7 @@ export default function HomePage() {
               <div className="mt-8 flex sm:justify-center">
                 <SignedOut>
                   <SignUpButton mode="modal">
-                    <button
-                      type="button"
-                      className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm"
-                    >
-                      Sign up
-                    </button>
+                    <Button>Sign up</Button>
                   </SignUpButton>
                 </SignedOut>
               </div>

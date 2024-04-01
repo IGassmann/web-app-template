@@ -3,6 +3,24 @@
 This is a complete template for building web apps. It's primarily intended for my own usage. I use
 it to gather my learnings and opinions on best practices and configurations.
 
+## Features
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Tailwind Catalyst**
+- **Clerk**
+- **React Testing Library**
+- **Prettier**
+- **ESLint**
+- **Jest**
+- **SVGR**
+- **Conventional Commits**
+- **Airbnb Style Guide**
+- **pnpm**
+- **Segment Analytics**
+- **Sentry**
+
 ## Setup
 
 Before being able to run the app for the first time, you need to follow the steps below:

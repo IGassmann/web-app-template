@@ -11,7 +11,7 @@ const nextConfig = {
     // Tunnel sentry events to help circumvent ad-blockers.
     tunnelRoute: '/api/sentry',
   },
-  webpack(config, { webpack, dev }) {
+  webpack(config, { webpack }) {
     // Configures webpack to handle SVG files with SVGR. SVGR optimizes and transforms SVG files
     // into React components. See https://react-svgr.com/docs/next/
 
@@ -39,10 +39,14 @@ const nextConfig = {
     fileLoaderRule.exclude = /\.svg$/i;
 
     // Tree-shake optional Sentry debug code in production builds.
-    // See https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/tree-shaking/#tree-shaking-optional-code
+    // See https://docs.sentry.io/platforms/javascript/guides/nextjs/configuration/tree-shaking
     config.plugins.push(
       new webpack.DefinePlugin({
-        __SENTRY_DEBUG__: dev,
+        __SENTRY_DEBUG__: false,
+        __SENTRY_TRACING__: false,
+        __RRWEB_EXCLUDE_IFRAME__: true,
+        __RRWEB_EXCLUDE_SHADOW_DOM__: true,
+        __SENTRY_EXCLUDE_REPLAY_WORKER__: true,
       }),
     );
 
