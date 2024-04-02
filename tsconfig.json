@@ -4,7 +4,6 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "verbatimModuleSyntax": true,
@@ -14,14 +13,8 @@
     "noUncheckedIndexedAccess": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "paths": { "@/*": ["./src/*"] },
+    "plugins": [{ "name": "next" }]
   },
   "include": [
     "./src/**/*",
