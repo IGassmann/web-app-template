@@ -1,4 +1,4 @@
-import util from 'node:util';
+import { promisify } from 'node:util';
 import { Analytics, Context } from '@segment/analytics-node';
 import { captureException } from '@sentry/nextjs';
 
@@ -30,7 +30,7 @@ export default async function serverAnalytics(): Promise<
   // eslint-disable-next-line unicorn/no-array-reduce -- This is simpler than using .map with Object.fromEntries.
   const promisifiedAnalyticsCalls = analyticsCallNames.reduce((accumulator, analyticsCallName) => {
     const analyticsCall = analytics[analyticsCallName];
-    const promisifiedAnalyticsCall = util.promisify(analyticsCall);
+    const promisifiedAnalyticsCall = promisify(analyticsCall);
     return {
       ...accumulator,
       [analyticsCallName]: promisifiedAnalyticsCall,
