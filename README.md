@@ -8,7 +8,6 @@ it to gather my learnings and opinions on best practices and configurations.
 - Next.js
 - TypeScript
 - Tailwind CSS
-- Tailwind Catalyst
 - Clerk
 - Prettier
 - ESLint
