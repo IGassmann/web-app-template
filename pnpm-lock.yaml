@@ -65,8 +65,8 @@ devDependencies:
     specifier: ~20.12.4
     version: 20.12.4
   '@types/react':
-    specifier: 18.3.1
-    version: 18.3.1
+    specifier: 18.3.3
+    version: 18.3.3
   '@typescript-eslint/eslint-plugin':
     specifier: 7.8.0
     version: 7.8.0(@typescript-eslint/parser@7.7.0)(eslint@8.57.0)(typescript@5.4.3)
@@ -3862,8 +3862,8 @@ packages:
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
     dev: true
 
-  /@types/react@18.3.1:
-    resolution: {integrity: sha512-V0kuGBX3+prX+DQ/7r2qsv1NsdfnCLnTgnRJ1pYnxykBhGMz+qj+box5lq7XsO5mtZsBqpjwwTu/7wszPfMBcw==}
+  /@types/react@18.3.3:
+    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
