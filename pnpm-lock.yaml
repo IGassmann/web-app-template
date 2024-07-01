@@ -21,8 +21,8 @@ dependencies:
     specifier: 1.66.0
     version: 1.66.0
   '@segment/analytics-node':
-    specifier: 2.1.0
-    version: 2.1.0
+    specifier: 2.1.2
+    version: 2.1.2
   '@sentry/nextjs':
     specifier: 7.109.0
     version: 7.109.0(next@14.2.1)(react@18.3.1)
@@ -1993,7 +1993,7 @@ packages:
       detect-libc: 2.0.3
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
-      node-fetch: 2.6.9
+      node-fetch: 2.7.0
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
@@ -2314,6 +2314,15 @@ packages:
       tslib: 2.6.2
     dev: false
 
+  /@segment/analytics-core@1.6.0:
+    resolution: {integrity: sha512-bn9X++IScUfpT7aJGjKU/yJAu/Ko2sYD6HsKA70Z2560E89x30pqgqboVKY8kootvQnT4UKCJiUr5NDMgjmWdQ==}
+    dependencies:
+      '@lukeed/uuid': 2.0.1
+      '@segment/analytics-generic-utils': 1.2.0
+      dset: 3.1.3
+      tslib: 2.6.2
+    dev: false
+
   /@segment/analytics-generic-utils@1.2.0:
     resolution: {integrity: sha512-DfnW6mW3YQOLlDQQdR89k4EqfHb0g/3XvBXkovH1FstUN93eL1kfW9CsDcVQyH3bAC5ZsFyjA/o/1Q2j0QeoWw==}
     dependencies:
@@ -2340,12 +2349,12 @@ packages:
       - supports-color
     dev: false
 
-  /@segment/analytics-node@2.1.0:
-    resolution: {integrity: sha512-o50FA7CjfqnaSCPZ93DI15hOrqdu4fEYJFBlYkh7kbrARGTSGi3T5CRp3uM/un9oz0cJFoP/0+a2urXlAGE9aw==}
+  /@segment/analytics-node@2.1.2:
+    resolution: {integrity: sha512-CIqWH5G0pB/LAFAZEZtntAxujiYIpdk0F+YGhfM6N/qt4/VLWjFcd4VZXVLW7xqaxig64UKWGQhe8bszXDRXXw==}
     engines: {node: '>=18'}
     dependencies:
       '@lukeed/uuid': 2.0.1
-      '@segment/analytics-core': 1.5.0
+      '@segment/analytics-core': 1.6.0
       '@segment/analytics-generic-utils': 1.2.0
       buffer: 6.0.3
       jose: 5.2.3
@@ -8159,7 +8168,6 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
-    dev: false
 
   /node-gyp-build@4.8.0:
     resolution: {integrity: sha512-u6fs2AEUljNho3EYTJNBfImO5QTo/J/1Etd+NVdCj7qWKUSN/bSLkZwhDv7I+w/MSC6qJ4cknepkAYykDdK8og==}
