@@ -14,7 +14,7 @@ Sentry.init({
 Sentry.getCurrentHub?.()
   ?.getClient?.()
   ?.addIntegration?.(
-    new Sentry.Replay({
+    Sentry.replayIntegration({
       maskAllText: false,
       blockAllMedia: false,
     }),
