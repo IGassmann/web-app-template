@@ -67,7 +67,7 @@
     "postcss": "8.4.38",
     "prettier": "3.2.5",
     "prettier-plugin-tailwindcss": "0.5.13",
-    "tailwindcss": "3.4.3",
+    "tailwindcss": "3.4.4",
     "type-fest": "4.15.0",
     "typescript": "5.4.3",
     "vercel": "33.6.3"
