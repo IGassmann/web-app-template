@@ -59,7 +59,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-tsdoc": "0.3.0",
-    "eslint-plugin-unicorn": "54.0.0",
+    "eslint-plugin-unicorn": "55.0.0",
     "husky": "9.0.11",
     "knip": "5.17.3",
     "lint-staged": "15.2.2",
