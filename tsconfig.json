@@ -6,6 +6,7 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "module": "preserve",
+    "target": "es2023",
     "verbatimModuleSyntax": true,
     "jsx": "preserve",
     "noEmit": true,
