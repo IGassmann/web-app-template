@@ -18,7 +18,7 @@
     "env:rm": "vercel env rm",
     "dev": "next dev --turbo",
     "dev:debug": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "lint": "next lint --ignore-path ./.gitignore --fix",
+    "lint": "eslint --ignore-path ./.gitignore --fix .",
     "format": "prettier . --write",
     "build": "next build",
     "start": "next start",
@@ -33,9 +33,9 @@
     "@segment/analytics-next": "1.66.0",
     "@segment/analytics-node": "2.1.2",
     "@sentry/nextjs": "8.27.0",
-    "next": "15.0.0-canary.136",
-    "react": "19.0.0-rc-7771d3a7-20240827",
-    "react-dom": "19.0.0-rc-7771d3a7-20240827",
+    "next": "16.0.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
     "tailwind-merge": "2.2.2"
   },
   "devDependencies": {
@@ -47,16 +47,16 @@
     "@svgr/webpack": "8.1.0",
     "@tailwindcss/forms": "0.5.8",
     "@types/node": "20.x",
-    "@types/react": "npm:types-react-dom@rc",
-    "@types/react-dom": "npm:types-react-dom@rc",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "autoprefixer": "10.4.19",
     "commitizen": "4.3.0",
     "cross-env": "7.0.3",
-    "eslint": "8.57.0",
+    "eslint": "9.39.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "18.0.0",
-    "eslint-config-next": "15.0.0-canary.136",
+    "eslint-config-next": "16.0.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-eslint-comments": "3.2.0",
     "eslint-plugin-tsdoc": "0.3.0",
@@ -72,16 +72,9 @@
     "typescript": "5.5.4",
     "vercel": "33.6.3"
   },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "npm:types-react@rc",
-      "@types/react-dom": "npm:types-react-dom@rc"
-    }
-  },
   "engines": {
-    "node": "20.x",
-    "pnpm": "8.15.5"
+    "node": "22.x"
   },
-  "packageManager": "pnpm@8.15.5",
+  "packageManager": "pnpm@10.20.0",
   "private": true
 }
