@@ -11,6 +11,7 @@
   "repository": "https://github.com/IGassmann/web-app-template",
   "bugs": "https://github.com/IGassmann/web-app-template/issues",
   "author": "Igor Gassmann <igor@igassmann.me> (https://igassmann.me/)",
+  "type": "module",
   "main": "n/a",
   "scripts": {
     "env:pull": "vercel env pull .env.local",
@@ -73,7 +74,7 @@
     "vercel": "33.6.3"
   },
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   },
   "packageManager": "pnpm@10.20.0",
   "private": true

@@ -5,7 +5,7 @@
  * For configuration options, @see {@link https://github.com/svg/svgo/blob/main/README.md}
  * @type {import('svgo').Config}
  */
-module.exports = {
+export default {
   plugins: [
     {
       name: 'preset-default',

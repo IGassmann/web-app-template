@@ -8,21 +8,28 @@
     "module": "preserve",
     "target": "es2023",
     "verbatimModuleSyntax": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "noEmit": true,
     "incremental": true,
-    "paths": { "@/*": ["./src/*"] },
-    "plugins": [{ "name": "next" }]
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "./src/**/*",
     "./next-env.d.ts",
-    "./next.config.js",
+    "./next.config.ts",
     "./sentry.client.config.ts",
     "./sentry.edge.config.ts",
     "./sentry.server.config.ts",
     "./tailwind.config.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": ["./node_modules"]
 }
