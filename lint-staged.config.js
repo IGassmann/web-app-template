@@ -3,7 +3,7 @@ const ESLintTask = (fileNames) =>
     .map((file) => file.split(process.cwd())[1])
     .join(' --file ')}`;
 
-export default {
+const config = {
   // Type-check TypeScript files
   '**/*.{ts,tsx}': () => 'tsc -p tsconfig.json --noEmit',
   // Run ESLint and Prettier consecutively so that the tasks don't conflict with each other
@@ -11,3 +11,5 @@ export default {
   // Run Prettier in parallel for non-TypeScript files
   '!(./src/**/*.{tsx,ts})': 'prettier --ignore-unknown --write',
 };
+
+export default config;

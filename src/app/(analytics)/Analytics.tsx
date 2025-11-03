@@ -42,6 +42,5 @@ export default function Analytics() {
   useAnalyticsIdentify();
   useAnalyticsPageTracking();
 
-  // eslint-disable-next-line unicorn/no-null -- We need to return null here to avoid rendering anything.
   return null;
 }

@@ -22,6 +22,7 @@ const sentryIdentifyPlugin = {
   isLoaded: () => Sentry.getCurrentHub?.()?.getClient?.() !== undefined,
   load: () => Promise.resolve(),
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- TODO: improve typings
   identify: (context: any) => {
     const normalizedTraits = context.event.traits
       ? mapObjectNullValuesToUndefined(context.event.traits)

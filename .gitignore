@@ -14,5 +14,8 @@ node_modules/
 *.tsbuildinfo
 next-env.d.ts
 
+# ESLint
+.eslintcache
+
 # Sentry
 .sentryclirc

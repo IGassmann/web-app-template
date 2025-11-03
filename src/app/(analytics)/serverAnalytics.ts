@@ -27,7 +27,6 @@ export default async function serverAnalytics(): Promise<
 
   await analytics.register(sentryIdentifyPlugin);
 
-  // eslint-disable-next-line unicorn/no-array-reduce -- This is simpler than using .map with Object.fromEntries.
   const promisifiedAnalyticsCalls = analyticsCallNames.reduce((accumulator, analyticsCallName) => {
     const analyticsCall = analytics[analyticsCallName];
     const promisifiedAnalyticsCall = promisify(analyticsCall);
