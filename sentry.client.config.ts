@@ -9,13 +9,10 @@ Sentry.init({
   tracesSampleRate: 0.2,
   replaysSessionSampleRate: 0.1,
   replaysOnErrorSampleRate: 1,
-});
-
-Sentry.getCurrentHub?.()
-  ?.getClient?.()
-  ?.addIntegration?.(
+  integrations: [
     Sentry.replayIntegration({
       maskAllText: false,
       blockAllMedia: false,
     }),
-  );
+  ],
+});

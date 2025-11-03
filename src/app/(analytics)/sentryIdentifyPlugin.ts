@@ -19,7 +19,7 @@ const sentryIdentifyPlugin = {
   type: 'destination',
   version: '1.0.0',
 
-  isLoaded: () => Sentry.getCurrentHub?.()?.getClient?.() !== undefined,
+  isLoaded: () => Sentry.getClient() !== undefined,
   load: () => Promise.resolve(),
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any -- TODO: improve typings
