@@ -22,7 +22,7 @@ const nextConfig = {
  * @see {@link https://github.com/getsentry/sentry-webpack-plugin#options}
  */
 const sentryWebpackPluginOptions = {
-  silent: true,
+  silent: !process.env.CI,
   tunnelRoute: '/api/sentry', // Tunnel sentry events to help circumvent ad-blockers
 };
 
