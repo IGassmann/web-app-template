@@ -17,7 +17,7 @@
     "env:pull": "vercel env pull .env.local",
     "env:add": "vercel env add",
     "env:rm": "vercel env rm",
-    "dev": "next dev --turbo",
+    "dev": "npx @react-grab/claude-code@latest && next dev --turbo",
     "dev:debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "lint": "eslint --cache --fix .",
     "format": "prettier --experimental-cli --cache --write .",

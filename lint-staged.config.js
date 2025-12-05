@@ -1,7 +1,4 @@
-const ESLintTask = (fileNames) =>
-  `next lint --fix --file ${fileNames
-    .map((file) => file.split(process.cwd())[1])
-    .join(' --file ')}`;
+const ESLintTask = (fileNames) => `eslint --fix ${fileNames.join(' ')}`;
 
 const config = {
   // Type-check TypeScript files
